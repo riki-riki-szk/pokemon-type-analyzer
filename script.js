@@ -31,6 +31,9 @@ const typeButtons = {};
 // 現在選択中のセル
 let selectedCell = null;
 
+// ポケモン一覧の取得リクエスト管理用
+let pokemonListRequestId = 0;
+
 const typeList = document.getElementById("type-list");
 const selectedArea = document.getElementById("selected-types");
 const selectedCountArea = document.getElementById("selected-count");
@@ -720,7 +723,15 @@ function showDetail(defendTypes, maxMultiplier){
 
     html += createTypeGrid("無効", immune);
 
+    html += "<hr>";
+
+    html += "<div class='detail-group-title'>該当するポケモン(最終進化形のみ)</div>";
+    html += "<div id='pokemon-list' class='pokemon-list'>読み込み中...</div>";
+    html += "<p class='external-note'>※外部サービス(PokeAPI)から取得し、進化系統の最終形態のみを表示しています。表示に時間がかかったり、取得できない場合があります。</p>";
+
     detailArea.innerHTML = html;
+
+    loadPokemonList(defendTypes);
 
 }
 // ======================================
@@ -853,6 +864,186 @@ function refresh(){
     if(selectedCell===null){
 
         showWelcome();
+
+    }
+
+}
+
+// ======================================
+// PokeAPI 連携
+// 該当ポケモン一覧の取得
+// ======================================
+
+async function loadPokemonList(defendTypes){
+
+    const requestId = ++pokemonListRequestId;
+
+    const listEl = document.getElementById("pokemon-list");
+
+    try{
+
+        const apiTypes = defendTypes.map(type=>TYPE_CLASS[type]);
+
+        const responses = await Promise.all(
+            apiTypes.map(slug=>
+
+                fetch("https://pokeapi.co/api/v2/type/"+slug)
+                    .then(res=>res.json())
+
+            )
+        );
+
+        if(requestId !== pokemonListRequestId) return;
+
+        let pokemonNames;
+
+        if(responses.length === 1){
+
+            pokemonNames = responses[0].pokemon.map(p=>p.pokemon.name);
+
+        }else{
+
+            const namesB = new Set(
+                responses[1].pokemon.map(p=>p.pokemon.name)
+            );
+
+            pokemonNames = responses[0].pokemon
+                .map(p=>p.pokemon.name)
+                .filter(name=>namesB.has(name));
+
+        }
+
+        if(pokemonNames.length === 0){
+
+            listEl.textContent = "該当するポケモンが見つかりませんでした。";
+
+            return;
+
+        }
+
+        const infos = await Promise.all(
+            pokemonNames.map(name=>fetchSpeciesInfo(name))
+        );
+
+        if(requestId !== pokemonListRequestId) return;
+
+        const finalOnly = infos.filter(info=>info && info.isFinal);
+
+        if(finalOnly.length === 0){
+
+            listEl.textContent = "該当する最終進化形のポケモンが見つかりませんでした。";
+
+            return;
+
+        }
+
+        const uniqueNames = [...new Set(
+            finalOnly.map(info=>info.name)
+        )];
+
+        const displayNames = uniqueNames.slice(0, 24);
+
+        listEl.innerHTML = displayNames
+            .map(name=>"<span class='pokemon-chip'>"+name+"</span>")
+            .join("");
+
+        const remaining = uniqueNames.length - displayNames.length;
+
+        if(remaining > 0){
+
+            listEl.innerHTML +=
+                "<span class='pokemon-chip more'>他"+remaining+"匹</span>";
+
+        }
+
+    }catch(e){
+
+        if(requestId !== pokemonListRequestId) return;
+
+        listEl.textContent = "ポケモン一覧の取得に失敗しました(通信環境をご確認ください)。";
+
+    }
+
+}
+
+// evolution-chain のURLごとにキャッシュ(同じ進化系統の再取得を防ぐ)
+const evolutionChainCache = new Map();
+
+function findEvolutionNode(node, targetName){
+
+    if(node.species.name === targetName) return node;
+
+    for(const child of node.evolves_to){
+
+        const found = findEvolutionNode(child, targetName);
+
+        if(found) return found;
+
+    }
+
+    return null;
+
+}
+
+async function isFinalEvolution(speciesData){
+
+    const chainUrl = speciesData.evolution_chain.url;
+
+    if(!evolutionChainCache.has(chainUrl)){
+
+        evolutionChainCache.set(
+            chainUrl,
+            fetch(chainUrl).then(res=>res.json())
+        );
+
+    }
+
+    const chainData = await evolutionChainCache.get(chainUrl);
+
+    const node = findEvolutionNode(chainData.chain, speciesData.name);
+
+    // 系統内で見つからない場合は安全側(表示する)に倒す
+    return node ? node.evolves_to.length === 0 : true;
+
+}
+
+async function fetchSpeciesInfo(name){
+
+    try{
+
+        let res = await fetch(
+            "https://pokeapi.co/api/v2/pokemon-species/"+name
+        );
+
+        // メガシンカ・リージョンフォーム等はベース種名で再試行
+        if(!res.ok){
+
+            const base = name.split("-")[0];
+
+            res = await fetch(
+                "https://pokeapi.co/api/v2/pokemon-species/"+base
+            );
+
+        }
+
+        if(!res.ok) return null;
+
+        const data = await res.json();
+
+        const jaEntry =
+            data.names.find(n=>n.language.name === "ja-Hrkt") ||
+            data.names.find(n=>n.language.name === "ja");
+
+        const isFinal = await isFinalEvolution(data);
+
+        return {
+            name: jaEntry ? jaEntry.name : name,
+            isFinal: isFinal
+        };
+
+    }catch(e){
+
+        return null;
 
     }
 
