@@ -39,6 +39,8 @@ const selectedArea = document.getElementById("selected-types");
 const selectedCountArea = document.getElementById("selected-count");
 const selectedCoverageInline = document.getElementById("selected-coverage-inline");
 const matrixTable = document.getElementById("matrix-table");
+const matrixPanel = document.getElementById("matrix-panel");
+const detailPanel = document.getElementById("detail-panel");
 const detailArea = document.getElementById("detail");
 const autoSelectStatus = document.getElementById("auto-select-status");
 const autoSelectThresholdButton = document.getElementById("auto-select-threshold");
@@ -397,6 +399,30 @@ function createMatrix(){
         matrixTable.appendChild(tr);
 
     }
+
+    syncDetailPanelSize();
+
+}
+
+// -------------------------
+// 詳細パネルのサイズをマトリクスに合わせる
+// -------------------------
+
+function syncDetailPanelSize(){
+
+    if(window.innerWidth <= 960){
+
+        detailPanel.style.maxWidth = "";
+        detailPanel.style.maxHeight = "";
+
+        return;
+
+    }
+
+    const rect = matrixPanel.getBoundingClientRect();
+
+    detailPanel.style.maxWidth = rect.width + "px";
+    detailPanel.style.maxHeight = rect.height + "px";
 
 }
 // ======================================
