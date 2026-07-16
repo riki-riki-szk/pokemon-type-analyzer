@@ -261,7 +261,7 @@ function createMatrix(){
 
         th.textContent = type;
 
-        th.className = TYPE_CLASS[type];
+        th.className = TYPE_CLASS[type] + " col-header";
 
         headerRow.appendChild(th);
 
