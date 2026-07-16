@@ -921,8 +921,10 @@ async function loadPokemonList(defendTypes){
 
         }
 
-        const infos = await Promise.all(
-            pokemonNames.map(name=>fetchSpeciesInfo(name))
+        const infos = await mapWithConcurrencyLimit(
+            pokemonNames,
+            8,
+            name=>fetchSpeciesInfo(name)
         );
 
         if(requestId !== pokemonListRequestId) return;
@@ -963,6 +965,41 @@ async function loadPokemonList(defendTypes){
         listEl.textContent = "ポケモン一覧の取得に失敗しました(通信環境をご確認ください)。";
 
     }
+
+}
+
+// 同時リクエスト数を制限しながらmapする
+// (モバイル回線等での大量同時リクエストによる失敗・遅延を防ぐ)
+async function mapWithConcurrencyLimit(items, limit, fn){
+
+    const results = new Array(items.length);
+    let index = 0;
+
+    async function worker(){
+
+        while(index < items.length){
+
+            const current = index++;
+
+            results[current] = await fn(items[current]);
+
+        }
+
+    }
+
+    const workerCount = Math.min(limit, items.length);
+
+    const workers = [];
+
+    for(let i=0; i<workerCount; i++){
+
+        workers.push(worker());
+
+    }
+
+    await Promise.all(workers);
+
+    return results;
 
 }
 
