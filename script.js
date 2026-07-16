@@ -751,7 +751,12 @@ function showDetail(defendTypes, maxMultiplier){
 
     html += "<hr>";
 
-    html += "<div class='detail-group-title'>該当するポケモン(最終進化形のみ)</div>";
+    const pokemonNote =
+        defendTypes.length === 1
+            ? "(最終進化形・単タイプのみ)"
+            : "(最終進化形のみ)";
+
+    html += "<div class='detail-group-title'>該当するポケモン"+pokemonNote+"</div>";
     html += "<div id='pokemon-list' class='pokemon-list'>読み込み中...</div>";
     html += "<p class='external-note'>※外部サービス(PokeAPI)から取得し、進化系統の最終形態のみを表示しています。表示に時間がかかったり、取得できない場合があります。</p>";
 
@@ -947,10 +952,12 @@ async function loadPokemonList(defendTypes){
 
         }
 
+        const requireSingleType = defendTypes.length === 1;
+
         const infos = await mapWithConcurrencyLimit(
             pokemonNames,
             8,
-            name=>fetchSpeciesInfo(name)
+            name=>fetchSpeciesInfo(name, requireSingleType)
         );
 
         if(requestId !== pokemonListRequestId) return;
@@ -1070,9 +1077,26 @@ async function isFinalEvolution(speciesData){
 
 }
 
-async function fetchSpeciesInfo(name){
+async function fetchSpeciesInfo(name, requireSingleType){
 
     try{
+
+        // 単タイプ検索の場合、複合タイプ持ちのポケモンは除外する
+        if(requireSingleType){
+
+            const pokeRes = await fetch(
+                "https://pokeapi.co/api/v2/pokemon/"+name
+            );
+
+            if(pokeRes.ok){
+
+                const pokeData = await pokeRes.json();
+
+                if(pokeData.types.length > 1) return null;
+
+            }
+
+        }
 
         let res = await fetch(
             "https://pokeapi.co/api/v2/pokemon-species/"+name
