@@ -1046,16 +1046,29 @@ async function loadPokemonList(defendTypes){
 
         const displayNames = uniqueNames.slice(0, 24);
 
-        listEl.innerHTML = displayNames
-            .map(name=>"<span class='pokemon-chip'>"+name+"</span>")
-            .join("");
+        listEl.innerHTML = "";
+
+        displayNames.forEach(name=>{
+
+            const chip = document.createElement("span");
+
+            chip.className = "pokemon-chip";
+            chip.textContent = name;
+
+            listEl.appendChild(chip);
+
+        });
 
         const remaining = uniqueNames.length - displayNames.length;
 
         if(remaining > 0){
 
-            listEl.innerHTML +=
-                "<span class='pokemon-chip more'>他"+remaining+"匹</span>";
+            const moreChip = document.createElement("span");
+
+            moreChip.className = "pokemon-chip more";
+            moreChip.textContent = "他"+remaining+"匹";
+
+            listEl.appendChild(moreChip);
 
         }
 
