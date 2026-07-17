@@ -36,6 +36,7 @@ let pokemonListRequestId = 0;
 
 const typeList = document.getElementById("type-list");
 const selectedArea = document.getElementById("selected-types");
+const suggestionArea = document.getElementById("suggestion-area");
 const selectedCountArea = document.getElementById("selected-count");
 const selectedCoverageInline = document.getElementById("selected-coverage-inline");
 const matrixTable = document.getElementById("matrix-table");
@@ -890,6 +891,8 @@ function refresh(){
 
     updateCoverage();
 
+    updateSuggestions();
+
     createMatrix();
 
     if(selectedCell===null){
@@ -897,6 +900,71 @@ function refresh(){
         showWelcome();
 
     }
+
+}
+
+// ----------------------------
+// 追加すると良いタイプ候補の表示
+// ----------------------------
+
+function updateSuggestions(){
+
+    suggestionArea.innerHTML = "";
+
+    if(selectedTypes.size === 0 || selectedTypes.size >= TYPES.length){
+
+        return;
+
+    }
+
+    const result = findBestNextTypes([...selectedTypes], 5);
+
+    const currentCoverage = calculateCoverage([...selectedTypes]);
+
+    const gainCandidates = result.candidates.filter(
+        c => c.covered > currentCoverage.covered
+    );
+
+    if(gainCandidates.length === 0){
+
+        return;
+
+    }
+
+    const label = document.createElement("div");
+    label.className = "suggestion-title";
+    label.textContent = "追加候補(カバー率が伸びるタイプ)";
+    suggestionArea.appendChild(label);
+
+    const list = document.createElement("div");
+    list.className = "suggestion-list";
+
+    gainCandidates.forEach(candidate=>{
+
+        const chip = document.createElement("button");
+
+        chip.className =
+            "suggestion-chip " + TYPE_CLASS[candidate.type];
+
+        const percent =
+            (candidate.covered / result.total * 100).toFixed(1);
+
+        chip.innerHTML =
+            candidate.type +
+            "<span class='suggestion-percent'>" +
+            percent + "%</span>";
+
+        chip.onclick = () => {
+
+            toggleType(candidate.type);
+
+        };
+
+        list.appendChild(chip);
+
+    });
+
+    suggestionArea.appendChild(list);
 
 }
 

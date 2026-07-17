@@ -338,6 +338,48 @@ function findMinimalComboOverThreshold(thresholdPercent) {
 }
 
 // -------------------------
+// 追加すると最もカバー率が伸びるタイプ候補
+// -------------------------
+
+function findBestNextTypes(currentTypes, count) {
+
+    const masks = getTypeMasks();
+
+    let currentMask = 0n;
+
+    currentTypes.forEach(type => {
+        currentMask |= masks[type];
+    });
+
+    const currentCovered = popcount(currentMask);
+
+    const candidates = TYPES
+        .filter(type => !currentTypes.includes(type))
+        .map(type => {
+
+            const mask = currentMask | masks[type];
+            const covered = popcount(mask);
+
+            return {
+                type,
+                covered,
+                gain: covered - currentCovered
+            };
+
+        })
+        .sort((a, b) => b.covered - a.covered)
+        .slice(0, count);
+
+    return {
+
+        candidates,
+        total: ALL_DEFENSE_TYPES.length
+
+    };
+
+}
+
+// -------------------------
 // CSS
 // -------------------------
 
