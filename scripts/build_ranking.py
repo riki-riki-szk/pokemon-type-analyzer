@@ -15,7 +15,6 @@ import re
 import sys
 import time
 import urllib.request
-from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -260,7 +259,6 @@ def main():
     season, _, data_date = latest_daily.partition("/")
 
     result = {
-        "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "season": season or None,
         "dataDate": data_date.replace("_", "/") if data_date else None,   # DD/MM/YYYY
         "source": {
