@@ -2,7 +2,10 @@ name: Update Champions ranking
 
 on:
   schedule:
-    # 毎日 21:00 UTC (= 06:00 JST)
+    # データ元(championsbattledata.com)はその日の分を 19〜22時 JST 頃に公開するので、
+    # 23:00 JST に取り込み、保険として 06:00 JST にもう一度実行する
+    # (差分がなければコミットしない)
+    - cron: "0 14 * * *"
     - cron: "0 21 * * *"
   workflow_dispatch:
 
@@ -31,5 +34,6 @@ jobs:
             echo "No changes."
             exit 0
           fi
-          git commit -m "Update Champions usage ranking ($(date -u +%Y-%m-%d))"
+          DATA_DATE=$(python -c "import json; d=json.load(open('data/champions_ranking.json', encoding='utf-8')); print(d.get('dataDate') or '')")
+          git commit -m "Update Champions usage ranking (data: ${DATA_DATE}, run: $(TZ=Asia/Tokyo date +%Y-%m-%d))"
           git push
