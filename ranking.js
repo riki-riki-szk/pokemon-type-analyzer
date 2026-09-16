@@ -6,7 +6,7 @@
 //
 // data/champions_ranking.json(GitHub Actionsで毎日生成)を読み込み、
 // マトリクス右側にランキングパネルを表示する。
-// チェックしたポケモンのタイプはマトリクス上に順位バッジとして反映される。
+// 選択したポケモンのタイプはマトリクス上に順位バッジとして反映される。
 
 (function(){
 
@@ -140,148 +140,95 @@
 
         entries.forEach(entry=>{
 
-            const row = document.createElement("div");
-            row.className = "ranking-row";
+            const multi = entry.forms.length > 1;
 
-            const main = document.createElement("div");
-            main.className = "ranking-main";
+            // 採用率の高いフォーム(default)を先頭にする
+            const forms = [...entry.forms].sort(
+                (a,b)=>(b.default ? 1 : 0)-(a.default ? 1 : 0)
+            );
 
-            const mainCheck = document.createElement("input");
-            mainCheck.type = "checkbox";
-            mainCheck.className = "ranking-check";
-            mainCheck.title = "チェックするとマトリクスに反映";
+            forms.forEach(form=>{
 
-            const rankNo = document.createElement("span");
-            rankNo.className = "ranking-no";
-            rankNo.textContent = entry.rank;
+                listArea.appendChild(
+                    createFormButton(entry, form, multi)
+                );
 
-            const name = document.createElement("button");
-            name.type = "button";
-            name.className = "ranking-name";
-            name.textContent = entry.name;
-            name.title = "クリックで詳細を表示";
-
-            main.appendChild(mainCheck);
-            main.appendChild(rankNo);
-            main.appendChild(name);
-
-            row.appendChild(main);
-
-            const single = entry.forms.length === 1;
-
-            if(single){
-
-                const form = entry.forms[0];
-
-                main.appendChild(createTypeChips(form.types));
-
-                mainCheck.checked = isChecked(entry, form);
-
-                mainCheck.onchange = ()=>{
-                    setChecked(entry, form, mainCheck.checked);
-                    applyRankingMarkers();
-                };
-
-                name.onclick = ()=>showFormDetail(form);
-
-            }else{
-
-                const formsArea = document.createElement("div");
-                formsArea.className = "ranking-forms";
-
-                const subChecks = [];
-
-                entry.forms.forEach(form=>{
-
-                    const label = document.createElement("label");
-                    label.className = "ranking-form";
-
-                    const check = document.createElement("input");
-                    check.type = "checkbox";
-                    check.className = "ranking-check";
-                    check.checked = isChecked(entry, form);
-
-                    const formName = document.createElement("span");
-                    formName.className = "ranking-form-name";
-                    formName.textContent = form.label;
-
-                    label.appendChild(check);
-                    label.appendChild(formName);
-                    label.appendChild(createTypeChips(form.types));
-
-                    if(form.rate !== null && form.rate !== undefined){
-                        const rate = document.createElement("span");
-                        rate.className = "ranking-rate";
-                        rate.textContent = form.rate+"%";
-                        rate.title = "持ち物(メガストーン)採用率から推定";
-                        label.appendChild(rate);
-                    }
-
-                    check.onchange = ()=>{
-                        setChecked(entry, form, check.checked);
-                        syncMainCheck();
-                        applyRankingMarkers();
-                    };
-
-                    subChecks.push({form:form, input:check});
-
-                    formsArea.appendChild(label);
-
-                });
-
-                row.appendChild(formsArea);
-
-                function syncMainCheck(){
-
-                    const on = subChecks.filter(s=>s.input.checked).length;
-
-                    mainCheck.checked = on > 0;
-                    mainCheck.indeterminate = on > 0 && on < subChecks.length;
-
-                }
-
-                syncMainCheck();
-
-                // 行頭チェック: ONなら採用率の高いフォームを、OFFなら全フォームを解除
-                mainCheck.onchange = ()=>{
-
-                    const turnOn = mainCheck.checked;
-
-                    subChecks.forEach(s=>{
-
-                        const on = turnOn ? !!s.form.default : false;
-
-                        s.input.checked = on;
-                        setChecked(entry, s.form, on);
-
-                    });
-
-                    syncMainCheck();
-                    applyRankingMarkers();
-
-                };
-
-                name.onclick = ()=>{
-
-                    const checkedForm =
-                        subChecks.find(s=>s.input.checked);
-
-                    const target =
-                        checkedForm
-                            ? checkedForm.form
-                            : (entry.forms.find(f=>f.default) || entry.forms[0]);
-
-                    showFormDetail(target);
-
-                };
-
-            }
-
-            listArea.appendChild(row);
+            });
 
         });
 
     }
+
+    // 1フォーム = 1ボタン。攻撃タイプのボタンと同じくクリックでON/OFF
+    function createFormButton(entry, form, multi){
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "ranking-item";
+
+        if(multi && !form.default){
+            button.classList.add("ranking-item-sub");
+        }
+
+        button.classList.toggle("active", isChecked(entry, form));
+
+        const rankNo = document.createElement("span");
+        rankNo.className = "ranking-no";
+        rankNo.textContent = entry.rank;
+
+        if(entry.rank <= 3) rankNo.classList.add("ranking-no-top");
+
+        const name = document.createElement("span");
+        name.className = "ranking-name";
+        name.textContent = entry.name;
+
+        button.appendChild(rankNo);
+        button.appendChild(name);
+
+        if(multi){
+
+            const formName = document.createElement("span");
+            formName.className = "ranking-form-name";
+            formName.textContent = form.label;
+            button.appendChild(formName);
+
+        }
+
+        button.appendChild(createTypeChips(form.types));
+
+        if(multi && form.rate !== null && form.rate !== undefined){
+
+            const rate = document.createElement("span");
+            rate.className = "ranking-rate";
+            rate.textContent = form.rate+"%";
+            rate.title = "持ち物(メガストーン)採用率から推定";
+            button.appendChild(rate);
+
+        }
+
+        button.title =
+            "クリックでマトリクスに反映/解除"+
+            (multi ? "(通常とメガは別々に選べます)" : "");
+
+        button.onclick = ()=>{
+
+            const on = !isChecked(entry, form);
+
+            setChecked(entry, form, on);
+
+            button.classList.toggle("active", on);
+
+            applyRankingMarkers();
+
+            // ONにしたときはそのタイプの詳細も表示する
+            if(on) showFormDetail(form);
+
+        };
+
+        return button;
+
+    }
+
 
     // ----------------------------
     // 詳細表示(既存のshowDetailを利用)
@@ -396,7 +343,7 @@
         if(items.length === 0){
 
             summaryArea.textContent =
-                "チェックしたポケモンのタイプがマトリクスに表示されます。";
+                "ポケモンをクリックすると、そのタイプがマトリクスに表示されます。";
 
             return;
 
@@ -419,14 +366,14 @@
         if(attack.length === 0){
 
             summaryArea.textContent =
-                "チェック中 "+items.length+"体 ・ 攻撃タイプを選ぶと弱点を突ける数が表示されます";
+                "選択中 "+items.length+"体 ・ 攻撃タイプを選ぶと弱点を突ける数が表示されます";
 
             return;
 
         }
 
         summaryArea.textContent =
-            "チェック中 "+items.length+"体 ・ 弱点を突ける "+weak+"体 ・ 半減以下 "+resist+"体";
+            "選択中 "+items.length+"体 ・ 弱点を突ける "+weak+"体 ・ 半減以下 "+resist+"体";
 
     }
 
