@@ -272,7 +272,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 77.0,
+      "rate": 77.1,
       "default": true
      },
      {
@@ -282,7 +282,7 @@
        "みず",
        "あく"
       ],
-      "rate": 23.0,
+      "rate": 22.9,
       "default": false
      }
     ]
@@ -372,7 +372,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 73.5,
+      "rate": 73.7,
       "default": true
      },
      {
@@ -382,7 +382,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 26.5,
+      "rate": 26.3,
       "default": false
      }
     ]
@@ -843,7 +843,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 20.8,
+      "rate": 20.9,
       "default": false
      },
      {
@@ -853,7 +853,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 79.2,
+      "rate": 79.1,
       "default": true
      }
     ]
@@ -1142,7 +1142,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 57.0,
+      "rate": 56.8,
       "default": true
      },
      {
@@ -1151,7 +1151,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 43.0,
+      "rate": 43.2,
       "default": false
      }
     ]
@@ -1176,24 +1176,6 @@
    },
    {
     "rank": 12,
-    "id": "farigiraf",
-    "en": "Farigiraf",
-    "name": "リキキリン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ノーマル",
-       "エスパー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 13,
     "id": "gholdengo",
     "en": "Gholdengo",
     "name": "サーフゴー",
@@ -1204,6 +1186,24 @@
       "types": [
        "はがね",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 13,
+    "id": "farigiraf",
+    "en": "Farigiraf",
+    "name": "リキキリン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ノーマル",
+       "エスパー"
       ],
       "rate": null,
       "default": true
@@ -1310,24 +1310,6 @@
    },
    {
     "rank": 19,
-    "id": "tyranitar",
-    "en": "Tyranitar",
-    "name": "バンギラス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 20,
     "id": "arcaninehisui",
     "en": "Arcanine-Hisui",
     "name": "ヒスイウインディ",
@@ -1338,6 +1320,24 @@
       "types": [
        "ほのお",
        "いわ"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 20,
+    "id": "tyranitar",
+    "en": "Tyranitar",
+    "name": "バンギラス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -1364,23 +1364,6 @@
    },
    {
     "rank": 22,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 23,
     "id": "raichu",
     "en": "Raichu",
     "name": "ライチュウ",
@@ -1390,6 +1373,23 @@
       "label": null,
       "types": [
        "でんき"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 23,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1498,7 +1498,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 26.2,
+      "rate": 25.8,
       "default": false
      },
      {
@@ -1508,7 +1508,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 73.8,
+      "rate": 74.2,
       "default": true
      }
     ]
@@ -1604,24 +1604,6 @@
    },
    {
     "rank": 35,
-    "id": "pawmot",
-    "en": "Pawmot",
-    "name": "パーモット",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 36,
     "id": "swampert",
     "en": "Swampert",
     "name": "ラグラージ",
@@ -1632,6 +1614,24 @@
       "types": [
        "みず",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 36,
+    "id": "pawmot",
+    "en": "Pawmot",
+    "name": "パーモット",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "かくとう"
       ],
       "rate": null,
       "default": true
