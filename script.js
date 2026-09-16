@@ -34,6 +34,12 @@ let selectedCell = null;
 // ポケモン一覧の取得リクエスト管理用
 let pokemonListRequestId = 0;
 
+// 詳細パネルに表示中の相手タイプ(攻撃タイプ変更後も表示を維持するため)
+let currentDetailTypes = null;
+
+// 該当ポケモン一覧のキャッシュ(相手タイプ → 名前配列)
+const pokemonListCache = new Map();
+
 const typeList = document.getElementById("type-list");
 const selectedArea = document.getElementById("selected-types");
 const suggestionArea = document.getElementById("suggestion-area");
@@ -658,10 +664,15 @@ function createTypeGrid(title, list){
 
     list.forEach(item=>{
 
+        const active = selectedTypes.has(item.type);
+
         html +=
-            "<div class='detail-cell " +
+            "<div class='detail-cell detail-cell-clickable " +
             multiplierClass(item.value) +
-            "'><span>" +
+            (active ? " active" : "") +
+            "' data-type='" + item.type + "'" +
+            " title='クリックで攻撃タイプに" + (active ? "解除" : "追加") + "'" +
+            "><span>" +
             item.type +
             "</span><span class='detail-value'>" +
             formatMultiplier(item.value) +
@@ -680,6 +691,8 @@ function createTypeGrid(title, list){
 // ======================================
 
 function showDetail(defendTypes, maxMultiplier){
+
+    currentDetailTypes = [...defendTypes];
 
     const weak = [];
     const normal = [];
@@ -741,6 +754,8 @@ function showDetail(defendTypes, maxMultiplier){
         "<b>最大倍率：</b>" +
         formatMultiplier(maxMultiplier) +
         "倍";
+
+    html += "<p class='detail-hint'>タイプをクリックすると攻撃タイプの選択に追加/解除できます</p>";
 
     html += createTypeGrid("弱点", weak);
 
@@ -865,7 +880,27 @@ document.addEventListener("keydown",event=>{
 
     }
 
+    currentDetailTypes = null;
+
     showWelcome();
+
+});
+
+// ----------------------------
+// 詳細パネル内のタイプをクリック → 攻撃タイプの選択に反映
+// ----------------------------
+
+detailArea.addEventListener("click",event=>{
+
+    const cell = event.target.closest(".detail-cell[data-type]");
+
+    if(!cell || !detailArea.contains(cell)) return;
+
+    const type = cell.dataset.type;
+
+    if(!typeButtons[type]) return;
+
+    toggleType(type);
 
 });
 
@@ -895,7 +930,15 @@ function refresh(){
 
     createMatrix();
 
-    if(selectedCell===null){
+    if(currentDetailTypes){
+
+        // 表示中の詳細を、新しい選択内容で描き直す
+        showDetail(
+            currentDetailTypes,
+            getBestMultiplier([...selectedTypes], currentDetailTypes)
+        );
+
+    }else{
 
         showWelcome();
 
@@ -979,6 +1022,16 @@ async function loadPokemonList(defendTypes){
 
     const listEl = document.getElementById("pokemon-list");
 
+    const cacheKey = defendTypes.join("・");
+
+    if(pokemonListCache.has(cacheKey)){
+
+        renderPokemonList(listEl, pokemonListCache.get(cacheKey));
+
+        return;
+
+    }
+
     try{
 
         const apiTypes = defendTypes.map(type=>TYPE_CLASS[type]);
@@ -1044,39 +1097,48 @@ async function loadPokemonList(defendTypes){
             finalOnly.map(info=>info.name)
         )];
 
-        const displayNames = uniqueNames.slice(0, 24);
+        pokemonListCache.set(cacheKey, uniqueNames);
 
-        listEl.innerHTML = "";
-
-        displayNames.forEach(name=>{
-
-            const chip = document.createElement("span");
-
-            chip.className = "pokemon-chip";
-            chip.textContent = name;
-
-            listEl.appendChild(chip);
-
-        });
-
-        const remaining = uniqueNames.length - displayNames.length;
-
-        if(remaining > 0){
-
-            const moreChip = document.createElement("span");
-
-            moreChip.className = "pokemon-chip more";
-            moreChip.textContent = "他"+remaining+"匹";
-
-            listEl.appendChild(moreChip);
-
-        }
+        renderPokemonList(listEl, uniqueNames);
 
     }catch(e){
 
         if(requestId !== pokemonListRequestId) return;
 
         listEl.textContent = "ポケモン一覧の取得に失敗しました(通信環境をご確認ください)。";
+
+    }
+
+}
+
+// 取得済みの名前一覧をチップとして描画する
+function renderPokemonList(listEl, uniqueNames){
+
+    const displayNames = uniqueNames.slice(0, 24);
+
+    listEl.innerHTML = "";
+
+    displayNames.forEach(name=>{
+
+        const chip = document.createElement("span");
+
+        chip.className = "pokemon-chip";
+        chip.textContent = name;
+
+        listEl.appendChild(chip);
+
+    });
+
+    const remaining = uniqueNames.length - displayNames.length;
+
+    if(remaining > 0){
+
+        const moreChip = document.createElement("span");
+
+        moreChip.className = "pokemon-chip more";
+        moreChip.textContent = "他"+remaining+"匹";
+
+        listEl.appendChild(moreChip);
 
     }
 
