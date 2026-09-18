@@ -43,6 +43,7 @@
 
             renderMeta();
             renderList();
+            syncRankingPanelSize();
             applyRankingMarkers();
 
         }catch(e){
@@ -447,9 +448,36 @@
 
         originalCreateMatrix();
 
+        syncRankingPanelSize();
+
         applyRankingMarkers();
 
     };
+
+    // 3カラム表示のときはランキングの高さをマトリクスに合わせる
+    function syncRankingPanelSize(){
+
+        if(window.innerWidth <= 1400){
+
+            panel.style.maxHeight = "";
+
+            return;
+
+        }
+
+        // 詳細パネルと同じ高さ基準(マトリクスの実高さ)に揃える
+        if(typeof syncDetailPanelSize === "function") syncDetailPanelSize();
+
+        const rect = matrixPanel.getBoundingClientRect();
+
+        panel.style.maxHeight = rect.height + "px";
+
+    }
+
+    syncRankingPanelSize();
+
+    // フォント読み込み後に高さが変わることがあるので、読み込み完了時にもう一度合わせる
+    window.addEventListener("load", syncRankingPanelSize);
 
     loadRanking();
 
