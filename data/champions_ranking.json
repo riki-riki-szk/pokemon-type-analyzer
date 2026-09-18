@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "18/09/2026",
+ "dataDate": "19/09/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -118,24 +118,6 @@
    },
    {
     "rank": 6,
-    "id": "lucario",
-    "en": "Lucario",
-    "name": "ルカリオ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "かくとう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 7,
     "id": "baxcalibur",
     "en": "Baxcalibur",
     "name": "セグレイブ",
@@ -146,6 +128,24 @@
       "types": [
        "ドラゴン",
        "こおり"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 7,
+    "id": "lucario",
+    "en": "Lucario",
+    "name": "ルカリオ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "かくとう",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -272,7 +272,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 77.6,
+      "rate": 77.7,
       "default": true
      },
      {
@@ -282,7 +282,7 @@
        "みず",
        "あく"
       ],
-      "rate": 22.4,
+      "rate": 22.3,
       "default": false
      }
     ]
@@ -335,6 +335,23 @@
    },
    {
     "rank": 17,
+    "id": "cinderace",
+    "en": "Cinderace",
+    "name": "エースバーン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 18,
     "id": "glimmora",
     "en": "Glimmora",
     "name": "キラフロル",
@@ -345,23 +362,6 @@
       "types": [
        "いわ",
        "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 18,
-    "id": "cinderace",
-    "en": "Cinderace",
-    "name": "エースバーン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお"
       ],
       "rate": null,
       "default": true
@@ -478,24 +478,6 @@
    },
    {
     "rank": 25,
-    "id": "pawmot",
-    "en": "Pawmot",
-    "name": "パーモット",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 26,
     "id": "metagross",
     "en": "Metagross",
     "name": "メタグロス",
@@ -506,6 +488,24 @@
       "types": [
        "はがね",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 26,
+    "id": "pawmot",
+    "en": "Pawmot",
+    "name": "パーモット",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "かくとう"
       ],
       "rate": null,
       "default": true
@@ -951,7 +951,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 18.7,
+      "rate": 18.5,
       "default": false
      },
      {
@@ -961,7 +961,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 81.3,
+      "rate": 81.5,
       "default": true
      }
     ]
@@ -1152,7 +1152,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 55.8,
+      "rate": 55.5,
       "default": true
      },
      {
@@ -1161,7 +1161,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 44.2,
+      "rate": 44.5,
       "default": false
      }
     ]
@@ -1268,7 +1268,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.9,
+      "rate": 95.8,
       "default": true
      },
      {
@@ -1278,7 +1278,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.1,
+      "rate": 4.2,
       "default": false
      }
     ]
@@ -1320,6 +1320,23 @@
    },
    {
     "rank": 19,
+    "id": "raichu",
+    "en": "Raichu",
+    "name": "ライチュウ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 20,
     "id": "armarouge",
     "en": "Armarouge",
     "name": "グレンアルマ",
@@ -1330,23 +1347,6 @@
       "types": [
        "ほのお",
        "エスパー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 20,
-    "id": "raichu",
-    "en": "Raichu",
-    "name": "ライチュウ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき"
       ],
       "rate": null,
       "default": true
@@ -1454,7 +1454,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 23.5,
+      "rate": 23.1,
       "default": false
      },
      {
@@ -1464,7 +1464,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 76.5,
+      "rate": 76.9,
       "default": true
      }
     ]
@@ -1507,24 +1507,6 @@
    },
    {
     "rank": 29,
-    "id": "excadrill",
-    "en": "Excadrill",
-    "name": "ドリュウズ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "じめん",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 30,
     "id": "metagross",
     "en": "Metagross",
     "name": "メタグロス",
@@ -1535,6 +1517,24 @@
       "types": [
        "はがね",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 30,
+    "id": "excadrill",
+    "en": "Excadrill",
+    "name": "ドリュウズ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "じめん",
+       "はがね"
       ],
       "rate": null,
       "default": true
