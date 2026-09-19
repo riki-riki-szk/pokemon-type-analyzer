@@ -300,7 +300,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 74.2,
+      "rate": 74.3,
       "default": true
      },
      {
@@ -310,7 +310,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 25.8,
+      "rate": 25.7,
       "default": false
      }
     ]
@@ -370,24 +370,6 @@
    },
    {
     "rank": 19,
-    "id": "corviknight",
-    "en": "Corviknight",
-    "name": "アーマーガア",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ひこう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 20,
     "id": "basculegion",
     "en": "Basculegion",
     "name": "イダイトウ",
@@ -398,6 +380,24 @@
       "types": [
        "みず",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 20,
+    "id": "corviknight",
+    "en": "Corviknight",
+    "name": "アーマーガア",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ひこう",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -896,23 +896,6 @@
    },
    {
     "rank": 48,
-    "id": "bellibolt",
-    "en": "Bellibolt",
-    "name": "ハラバリー",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 49,
     "id": "absol",
     "en": "Absol",
     "name": "アブソル",
@@ -939,6 +922,23 @@
     ]
    },
    {
+    "rank": 49,
+    "id": "bellibolt",
+    "en": "Bellibolt",
+    "name": "ハラバリー",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
     "rank": 50,
     "id": "staraptor",
     "en": "Staraptor",
@@ -951,7 +951,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 18.3,
+      "rate": 18.2,
       "default": false
      },
      {
@@ -961,7 +961,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 81.7,
+      "rate": 81.8,
       "default": true
      }
     ]
@@ -1152,7 +1152,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 55.2,
+      "rate": 55.1,
       "default": true
      },
      {
@@ -1161,7 +1161,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 44.8,
+      "rate": 44.9,
       "default": false
      }
     ]
@@ -1250,7 +1250,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.8,
+      "rate": 95.7,
       "default": true
      },
      {
@@ -1260,7 +1260,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.2,
+      "rate": 4.3,
       "default": false
      }
     ]
@@ -1303,23 +1303,6 @@
    },
    {
     "rank": 18,
-    "id": "sylveon",
-    "en": "Sylveon",
-    "name": "ニンフィア",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 19,
     "id": "raichu",
     "en": "Raichu",
     "name": "ライチュウ",
@@ -1329,6 +1312,23 @@
       "label": null,
       "types": [
        "でんき"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 19,
+    "id": "sylveon",
+    "en": "Sylveon",
+    "name": "ニンフィア",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1355,24 +1355,6 @@
    },
    {
     "rank": 21,
-    "id": "tyranitar",
-    "en": "Tyranitar",
-    "name": "バンギラス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 22,
     "id": "whimsicott",
     "en": "Whimsicott",
     "name": "エルフーン",
@@ -1383,6 +1365,24 @@
       "types": [
        "くさ",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 22,
+    "id": "tyranitar",
+    "en": "Tyranitar",
+    "name": "バンギラス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -1454,7 +1454,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 22.8,
+      "rate": 22.7,
       "default": false
      },
      {
@@ -1464,31 +1464,13 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 77.2,
+      "rate": 77.3,
       "default": true
      }
     ]
    },
    {
     "rank": 27,
-    "id": "indeedee",
-    "en": "Indeedee",
-    "name": "イエッサン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "エスパー",
-       "ノーマル"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 28,
     "id": "metagross",
     "en": "Metagross",
     "name": "メタグロス",
@@ -1499,6 +1481,24 @@
       "types": [
        "はがね",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 28,
+    "id": "indeedee",
+    "en": "Indeedee",
+    "name": "イエッサン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "エスパー",
+       "ノーマル"
       ],
       "rate": null,
       "default": true
