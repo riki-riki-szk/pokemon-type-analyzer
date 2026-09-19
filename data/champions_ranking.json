@@ -39,7 +39,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 63.9,
+      "rate": 63.8,
       "default": true
      },
      {
@@ -48,7 +48,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 36.1,
+      "rate": 36.2,
       "default": false
      }
     ]
@@ -272,7 +272,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 77.7,
+      "rate": 77.8,
       "default": true
      },
      {
@@ -282,7 +282,7 @@
        "みず",
        "あく"
       ],
-      "rate": 22.3,
+      "rate": 22.2,
       "default": false
      }
     ]
@@ -300,7 +300,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 74.1,
+      "rate": 74.2,
       "default": true
      },
      {
@@ -310,7 +310,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 25.9,
+      "rate": 25.8,
       "default": false
      }
     ]
@@ -496,6 +496,23 @@
    },
    {
     "rank": 26,
+    "id": "blastoise",
+    "en": "Blastoise",
+    "name": "カメックス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 27,
     "id": "pawmot",
     "en": "Pawmot",
     "name": "パーモット",
@@ -513,7 +530,7 @@
     ]
    },
    {
-    "rank": 27,
+    "rank": 28,
     "id": "volcarona",
     "en": "Volcarona",
     "name": "ウルガモス",
@@ -531,42 +548,7 @@
     ]
    },
    {
-    "rank": 28,
-    "id": "blastoise",
-    "en": "Blastoise",
-    "name": "カメックス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
     "rank": 29,
-    "id": "skeledirge",
-    "en": "Skeledirge",
-    "name": "ラウドボーン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 30,
     "id": "dragonite",
     "en": "Dragonite",
     "name": "カイリュー",
@@ -577,6 +559,24 @@
       "types": [
        "ドラゴン",
        "ひこう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 30,
+    "id": "skeledirge",
+    "en": "Skeledirge",
+    "name": "ラウドボーン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
@@ -639,23 +639,6 @@
    },
    {
     "rank": 34,
-    "id": "sylveon",
-    "en": "Sylveon",
-    "name": "ニンフィア",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 35,
     "id": "kingambit",
     "en": "Kingambit",
     "name": "ドドゲザン",
@@ -666,6 +649,23 @@
       "types": [
        "あく",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 35,
+    "id": "sylveon",
+    "en": "Sylveon",
+    "name": "ニンフィア",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -843,7 +843,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 20.4,
+      "rate": 20.5,
       "default": false
      },
      {
@@ -853,7 +853,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 79.6,
+      "rate": 79.5,
       "default": true
      }
     ]
@@ -923,7 +923,7 @@
       "types": [
        "あく"
       ],
-      "rate": 3.8,
+      "rate": 3.7,
       "default": false
      },
      {
@@ -933,7 +933,7 @@
        "あく",
        "ゴースト"
       ],
-      "rate": 96.2,
+      "rate": 96.3,
       "default": true
      }
     ]
@@ -951,7 +951,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 18.5,
+      "rate": 18.3,
       "default": false
      },
      {
@@ -961,7 +961,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 81.5,
+      "rate": 81.7,
       "default": true
      }
     ]
@@ -1106,7 +1106,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.1,
+      "rate": 1.2,
       "default": false
      },
      {
@@ -1116,7 +1116,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 98.9,
+      "rate": 98.8,
       "default": true
      }
     ]
@@ -1152,7 +1152,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 55.5,
+      "rate": 55.2,
       "default": true
      },
      {
@@ -1161,7 +1161,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 44.5,
+      "rate": 44.8,
       "default": false
      }
     ]
@@ -1239,24 +1239,6 @@
    },
    {
     "rank": 15,
-    "id": "gardevoir",
-    "en": "Gardevoir",
-    "name": "サーナイト",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "エスパー",
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 16,
     "id": "charizard",
     "en": "Charizard",
     "name": "リザードン",
@@ -1280,6 +1262,24 @@
       ],
       "rate": 4.2,
       "default": false
+     }
+    ]
+   },
+   {
+    "rank": 16,
+    "id": "gardevoir",
+    "en": "Gardevoir",
+    "name": "サーナイト",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "エスパー",
+       "フェアリー"
+      ],
+      "rate": null,
+      "default": true
      }
     ]
    },
@@ -1454,7 +1454,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 23.1,
+      "rate": 22.8,
       "default": false
      },
      {
@@ -1464,7 +1464,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 76.9,
+      "rate": 77.2,
       "default": true
      }
     ]
@@ -1489,24 +1489,6 @@
    },
    {
     "rank": 28,
-    "id": "lucario",
-    "en": "Lucario",
-    "name": "ルカリオ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "かくとう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 29,
     "id": "metagross",
     "en": "Metagross",
     "name": "メタグロス",
@@ -1524,16 +1506,16 @@
     ]
    },
    {
-    "rank": 30,
-    "id": "excadrill",
-    "en": "Excadrill",
-    "name": "ドリュウズ",
+    "rank": 29,
+    "id": "lucario",
+    "en": "Lucario",
+    "name": "ルカリオ",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "じめん",
+       "かくとう",
        "はがね"
       ],
       "rate": null,
@@ -1542,7 +1524,7 @@
     ]
    },
    {
-    "rank": 31,
+    "rank": 30,
     "id": "volcarona",
     "en": "Volcarona",
     "name": "ウルガモス",
@@ -1553,6 +1535,24 @@
       "types": [
        "むし",
        "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 31,
+    "id": "excadrill",
+    "en": "Excadrill",
+    "name": "ドリュウズ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "じめん",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -1704,24 +1704,6 @@
    },
    {
     "rank": 40,
-    "id": "venusaur",
-    "en": "Venusaur",
-    "name": "フシギバナ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 41,
     "id": "gengar",
     "en": "Gengar",
     "name": "ゲンガー",
@@ -1731,6 +1713,24 @@
       "label": null,
       "types": [
        "ゴースト",
+       "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 41,
+    "id": "venusaur",
+    "en": "Venusaur",
+    "name": "フシギバナ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
        "どく"
       ],
       "rate": null,
