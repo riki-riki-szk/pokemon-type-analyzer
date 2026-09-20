@@ -388,24 +388,6 @@
    },
    {
     "rank": 20,
-    "id": "corviknight",
-    "en": "Corviknight",
-    "name": "アーマーガア",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ひこう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 21,
     "id": "indeedee",
     "en": "Indeedee",
     "name": "イエッサン",
@@ -416,6 +398,24 @@
       "types": [
        "エスパー",
        "ノーマル"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 21,
+    "id": "corviknight",
+    "en": "Corviknight",
+    "name": "アーマーガア",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ひこう",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -843,7 +843,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 20.8,
+      "rate": 20.9,
       "default": false
      },
      {
@@ -853,7 +853,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 79.2,
+      "rate": 79.1,
       "default": true
      }
     ]
@@ -934,7 +934,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 18.1,
+      "rate": 18.0,
       "default": false
      },
      {
@@ -944,7 +944,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 81.9,
+      "rate": 82.0,
       "default": true
      }
     ]
@@ -1152,7 +1152,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 54.8,
+      "rate": 54.7,
       "default": true
      },
      {
@@ -1161,7 +1161,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 45.2,
+      "rate": 45.3,
       "default": false
      }
     ]
@@ -1250,7 +1250,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.7,
+      "rate": 95.6,
       "default": true
      },
      {
@@ -1260,7 +1260,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.3,
+      "rate": 4.4,
       "default": false
      }
     ]
@@ -1285,6 +1285,23 @@
    },
    {
     "rank": 17,
+    "id": "raichu",
+    "en": "Raichu",
+    "name": "ライチュウ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 18,
     "id": "arcaninehisui",
     "en": "Arcanine-Hisui",
     "name": "ヒスイウインディ",
@@ -1295,23 +1312,6 @@
       "types": [
        "ほのお",
        "いわ"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 18,
-    "id": "raichu",
-    "en": "Raichu",
-    "name": "ライチュウ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき"
       ],
       "rate": null,
       "default": true
@@ -1391,23 +1391,6 @@
    },
    {
     "rank": 23,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 24,
     "id": "torkoal",
     "en": "Torkoal",
     "name": "コータス",
@@ -1417,6 +1400,23 @@
       "label": null,
       "types": [
        "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 24,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1436,7 +1436,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 21.8,
+      "rate": 21.6,
       "default": false
      },
      {
@@ -1446,7 +1446,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 78.2,
+      "rate": 78.4,
       "default": true
      }
     ]
@@ -1489,24 +1489,6 @@
    },
    {
     "rank": 28,
-    "id": "indeedee",
-    "en": "Indeedee",
-    "name": "イエッサン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "エスパー",
-       "ノーマル"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 29,
     "id": "volcarona",
     "en": "Volcarona",
     "name": "ウルガモス",
@@ -1517,6 +1499,24 @@
       "types": [
        "むし",
        "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 29,
+    "id": "indeedee",
+    "en": "Indeedee",
+    "name": "イエッサン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "エスパー",
+       "ノーマル"
       ],
       "rate": null,
       "default": true
@@ -1830,6 +1830,23 @@
    },
    {
     "rank": 47,
+    "id": "blastoise",
+    "en": "Blastoise",
+    "name": "カメックス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 48,
     "id": "absol",
     "en": "Absol",
     "name": "アブソル",
@@ -1851,23 +1868,6 @@
        "ゴースト"
       ],
       "rate": 98.2,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 48,
-    "id": "blastoise",
-    "en": "Blastoise",
-    "name": "カメックス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
       "default": true
      }
     ]
