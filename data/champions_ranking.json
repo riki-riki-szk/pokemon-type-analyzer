@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "20/09/2026",
+ "dataDate": "21/09/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -101,7 +101,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.7,
+      "rate": 1.8,
       "default": false
      },
      {
@@ -111,7 +111,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 98.3,
+      "rate": 98.2,
       "default": true
      }
     ]
@@ -300,7 +300,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 74.5,
+      "rate": 74.6,
       "default": true
      },
      {
@@ -310,7 +310,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 25.5,
+      "rate": 25.4,
       "default": false
      }
     ]
@@ -934,7 +934,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 18.0,
+      "rate": 17.9,
       "default": false
      },
      {
@@ -944,7 +944,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 82.0,
+      "rate": 82.1,
       "default": true
      }
     ]
@@ -1436,7 +1436,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 21.6,
+      "rate": 21.2,
       "default": false
      },
      {
@@ -1446,7 +1446,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 78.4,
+      "rate": 78.8,
       "default": true
      }
     ]
@@ -1686,24 +1686,6 @@
    },
    {
     "rank": 39,
-    "id": "glimmora",
-    "en": "Glimmora",
-    "name": "キラフロル",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 40,
     "id": "gengar",
     "en": "Gengar",
     "name": "ゲンガー",
@@ -1721,16 +1703,16 @@
     ]
    },
    {
-    "rank": 41,
-    "id": "venusaur",
-    "en": "Venusaur",
-    "name": "フシギバナ",
+    "rank": 40,
+    "id": "glimmora",
+    "en": "Glimmora",
+    "name": "キラフロル",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "くさ",
+       "いわ",
        "どく"
       ],
       "rate": null,
@@ -1739,7 +1721,7 @@
     ]
    },
    {
-    "rank": 42,
+    "rank": 41,
     "id": "dragonite",
     "en": "Dragonite",
     "name": "カイリュー",
@@ -1750,6 +1732,24 @@
       "types": [
        "ドラゴン",
        "ひこう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 42,
+    "id": "venusaur",
+    "en": "Venusaur",
+    "name": "フシギバナ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
+       "どく"
       ],
       "rate": null,
       "default": true
