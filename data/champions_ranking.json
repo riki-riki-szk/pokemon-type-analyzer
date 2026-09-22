@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "21/09/2026",
+ "dataDate": "22/09/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -39,7 +39,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 64.0,
+      "rate": 64.1,
       "default": true
      },
      {
@@ -48,7 +48,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 36.0,
+      "rate": 35.9,
       "default": false
      }
     ]
@@ -101,7 +101,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.8,
+      "rate": 1.9,
       "default": false
      },
      {
@@ -111,7 +111,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 98.2,
+      "rate": 98.1,
       "default": true
      }
     ]
@@ -243,6 +243,34 @@
    },
    {
     "rank": 13,
+    "id": "gyarados",
+    "en": "Gyarados",
+    "name": "ギャラドス",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "みず",
+       "ひこう"
+      ],
+      "rate": 78.1,
+      "default": true
+     },
+     {
+      "key": "mega",
+      "label": "メガ",
+      "types": [
+       "みず",
+       "あく"
+      ],
+      "rate": 21.9,
+      "default": false
+     }
+    ]
+   },
+   {
+    "rank": 14,
     "id": "aegislash",
     "en": "Aegislash",
     "name": "ギルガルド",
@@ -260,34 +288,6 @@
     ]
    },
    {
-    "rank": 14,
-    "id": "gyarados",
-    "en": "Gyarados",
-    "name": "ギャラドス",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "みず",
-       "ひこう"
-      ],
-      "rate": 77.9,
-      "default": true
-     },
-     {
-      "key": "mega",
-      "label": "メガ",
-      "types": [
-       "みず",
-       "あく"
-      ],
-      "rate": 22.1,
-      "default": false
-     }
-    ]
-   },
-   {
     "rank": 15,
     "id": "charizard",
     "en": "Charizard",
@@ -300,7 +300,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 74.9,
+      "rate": 75.2,
       "default": true
      },
      {
@@ -310,7 +310,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 25.1,
+      "rate": 24.8,
       "default": false
      }
     ]
@@ -388,24 +388,6 @@
    },
    {
     "rank": 20,
-    "id": "indeedee",
-    "en": "Indeedee",
-    "name": "イエッサン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "エスパー",
-       "ノーマル"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 21,
     "id": "corviknight",
     "en": "Corviknight",
     "name": "アーマーガア",
@@ -416,6 +398,24 @@
       "types": [
        "ひこう",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 21,
+    "id": "indeedee",
+    "en": "Indeedee",
+    "name": "イエッサン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "エスパー",
+       "ノーマル"
       ],
       "rate": null,
       "default": true
@@ -495,24 +495,6 @@
    },
    {
     "rank": 26,
-    "id": "rotomwash",
-    "en": "Rotom-Wash",
-    "name": "ウォッシュロトム",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 27,
     "id": "pawmot",
     "en": "Pawmot",
     "name": "パーモット",
@@ -523,6 +505,24 @@
       "types": [
        "でんき",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 27,
+    "id": "rotomwash",
+    "en": "Rotom-Wash",
+    "name": "ウォッシュロトム",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "みず"
       ],
       "rate": null,
       "default": true
@@ -843,7 +843,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 21.1,
+      "rate": 21.4,
       "default": false
      },
      {
@@ -853,31 +853,13 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 78.9,
+      "rate": 78.6,
       "default": true
      }
     ]
    },
    {
     "rank": 46,
-    "id": "armarouge",
-    "en": "Armarouge",
-    "name": "グレンアルマ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお",
-       "エスパー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 47,
     "id": "grimmsnarl",
     "en": "Grimmsnarl",
     "name": "オーロンゲ",
@@ -888,6 +870,24 @@
       "types": [
        "あく",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 47,
+    "id": "armarouge",
+    "en": "Armarouge",
+    "name": "グレンアルマ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお",
+       "エスパー"
       ],
       "rate": null,
       "default": true
@@ -934,7 +934,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 17.9,
+      "rate": 17.7,
       "default": false
      },
      {
@@ -944,7 +944,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 82.1,
+      "rate": 82.3,
       "default": true
      }
     ]
@@ -1124,24 +1124,6 @@
    },
    {
     "rank": 9,
-    "id": "pelipper",
-    "en": "Pelipper",
-    "name": "ペリッパー",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "ひこう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 10,
     "id": "garchomp",
     "en": "Garchomp",
     "name": "ガブリアス",
@@ -1164,6 +1146,24 @@
       ],
       "rate": 45.4,
       "default": false
+     }
+    ]
+   },
+   {
+    "rank": 10,
+    "id": "pelipper",
+    "en": "Pelipper",
+    "name": "ペリッパー",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "ひこう"
+      ],
+      "rate": null,
+      "default": true
      }
     ]
    },
@@ -1356,24 +1356,6 @@
    },
    {
     "rank": 21,
-    "id": "whimsicott",
-    "en": "Whimsicott",
-    "name": "エルフーン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ",
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 22,
     "id": "tyranitar",
     "en": "Tyranitar",
     "name": "バンギラス",
@@ -1384,6 +1366,24 @@
       "types": [
        "いわ",
        "あく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 22,
+    "id": "whimsicott",
+    "en": "Whimsicott",
+    "name": "エルフーン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1403,7 +1403,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 20.4,
+      "rate": 19.5,
       "default": false
      },
      {
@@ -1413,7 +1413,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 79.6,
+      "rate": 80.5,
       "default": true
      }
     ]
@@ -1437,23 +1437,6 @@
    },
    {
     "rank": 25,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 26,
     "id": "sinistcha",
     "en": "Sinistcha",
     "name": "ヤバソチャ",
@@ -1464,6 +1447,23 @@
       "types": [
        "くさ",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 26,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1508,24 +1508,6 @@
    },
    {
     "rank": 29,
-    "id": "volcarona",
-    "en": "Volcarona",
-    "name": "ウルガモス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "むし",
-       "ほのお"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 30,
     "id": "excadrill",
     "en": "Excadrill",
     "name": "ドリュウズ",
@@ -1536,6 +1518,24 @@
       "types": [
        "じめん",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 30,
+    "id": "volcarona",
+    "en": "Volcarona",
+    "name": "ウルガモス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "むし",
+       "ほのお"
       ],
       "rate": null,
       "default": true
@@ -1615,24 +1615,6 @@
    },
    {
     "rank": 35,
-    "id": "baxcalibur",
-    "en": "Baxcalibur",
-    "name": "セグレイブ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ドラゴン",
-       "こおり"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 36,
     "id": "froslass",
     "en": "Froslass",
     "name": "ユキメノコ",
@@ -1643,6 +1625,24 @@
       "types": [
        "こおり",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 36,
+    "id": "baxcalibur",
+    "en": "Baxcalibur",
+    "name": "セグレイブ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ドラゴン",
+       "こおり"
       ],
       "rate": null,
       "default": true
@@ -1687,24 +1687,6 @@
    },
    {
     "rank": 39,
-    "id": "pawmot",
-    "en": "Pawmot",
-    "name": "パーモット",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 40,
     "id": "glimmora",
     "en": "Glimmora",
     "name": "キラフロル",
@@ -1715,6 +1697,24 @@
       "types": [
        "いわ",
        "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 40,
+    "id": "pawmot",
+    "en": "Pawmot",
+    "name": "パーモット",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "かくとう"
       ],
       "rate": null,
       "default": true
@@ -1741,24 +1741,6 @@
    },
    {
     "rank": 42,
-    "id": "venusaur",
-    "en": "Venusaur",
-    "name": "フシギバナ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 43,
     "id": "aerodactyl",
     "en": "Aerodactyl",
     "name": "プテラ",
@@ -1769,6 +1751,24 @@
       "types": [
        "いわ",
        "ひこう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 43,
+    "id": "venusaur",
+    "en": "Venusaur",
+    "name": "フシギバナ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
+       "どく"
       ],
       "rate": null,
       "default": true
@@ -1858,7 +1858,7 @@
       "types": [
        "あく"
       ],
-      "rate": 1.8,
+      "rate": 2.0,
       "default": false
      },
      {
@@ -1868,31 +1868,13 @@
        "あく",
        "ゴースト"
       ],
-      "rate": 98.2,
+      "rate": 98.0,
       "default": true
      }
     ]
    },
    {
     "rank": 49,
-    "id": "annihilape",
-    "en": "Annihilape",
-    "name": "コノヨザル",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "かくとう",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 50,
     "id": "delphox",
     "en": "Delphox",
     "name": "マフォクシー",
@@ -1903,6 +1885,24 @@
       "types": [
        "ほのお",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 50,
+    "id": "annihilape",
+    "en": "Annihilape",
+    "name": "コノヨザル",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "かくとう",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
