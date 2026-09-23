@@ -424,24 +424,6 @@
    },
    {
     "rank": 22,
-    "id": "greninja",
-    "en": "Greninja",
-    "name": "ゲッコウガ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 23,
     "id": "metagross",
     "en": "Metagross",
     "name": "メタグロス",
@@ -452,6 +434,24 @@
       "types": [
        "はがね",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 23,
+    "id": "greninja",
+    "en": "Greninja",
+    "name": "ゲッコウガ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -1251,7 +1251,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.6,
+      "rate": 95.5,
       "default": true
      },
      {
@@ -1261,7 +1261,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.4,
+      "rate": 4.5,
       "default": false
      }
     ]
@@ -1403,7 +1403,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 18.4,
+      "rate": 18.2,
       "default": false
      },
      {
@@ -1413,7 +1413,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 81.6,
+      "rate": 81.8,
       "default": true
      }
     ]
@@ -1544,6 +1544,23 @@
    },
    {
     "rank": 31,
+    "id": "politoed",
+    "en": "Politoed",
+    "name": "ニョロトノ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 32,
     "id": "lucario",
     "en": "Lucario",
     "name": "ルカリオ",
@@ -1554,23 +1571,6 @@
       "types": [
        "かくとう",
        "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 32,
-    "id": "politoed",
-    "en": "Politoed",
-    "name": "ニョロトノ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
       ],
       "rate": null,
       "default": true
