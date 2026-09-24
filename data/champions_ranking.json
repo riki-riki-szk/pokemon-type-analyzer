@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "23/09/2026",
+ "dataDate": "24/09/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -567,24 +567,6 @@
    },
    {
     "rank": 30,
-    "id": "skeledirge",
-    "en": "Skeledirge",
-    "name": "ラウドボーン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 31,
     "id": "empoleon",
     "en": "Empoleon",
     "name": "エンペルト",
@@ -595,6 +577,24 @@
       "types": [
        "みず",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 31,
+    "id": "skeledirge",
+    "en": "Skeledirge",
+    "name": "ラウドボーン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
@@ -825,7 +825,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 21.6,
+      "rate": 21.7,
       "default": false
      },
      {
@@ -835,7 +835,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 78.4,
+      "rate": 78.3,
       "default": true
      }
     ]
@@ -907,7 +907,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 17.4,
+      "rate": 17.3,
       "default": false
      },
      {
@@ -917,7 +917,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 82.6,
+      "rate": 82.7,
       "default": true
      }
     ]
@@ -1135,7 +1135,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 54.7,
+      "rate": 54.8,
       "default": true
      },
      {
@@ -1144,7 +1144,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 45.3,
+      "rate": 45.2,
       "default": false
      }
     ]
@@ -1403,7 +1403,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 18.2,
+      "rate": 17.9,
       "default": false
      },
      {
@@ -1413,7 +1413,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 81.8,
+      "rate": 82.1,
       "default": true
      }
     ]
@@ -1473,23 +1473,6 @@
    },
    {
     "rank": 27,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 28,
     "id": "indeedee",
     "en": "Indeedee",
     "name": "イエッサン",
@@ -1500,6 +1483,23 @@
       "types": [
        "エスパー",
        "ノーマル"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 28,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1687,24 +1687,6 @@
    },
    {
     "rank": 39,
-    "id": "glimmora",
-    "en": "Glimmora",
-    "name": "キラフロル",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 40,
     "id": "dragonite",
     "en": "Dragonite",
     "name": "カイリュー",
@@ -1715,6 +1697,24 @@
       "types": [
        "ドラゴン",
        "ひこう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 40,
+    "id": "glimmora",
+    "en": "Glimmora",
+    "name": "キラフロル",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "どく"
       ],
       "rate": null,
       "default": true
@@ -1894,7 +1894,7 @@
       "types": [
        "あく"
       ],
-      "rate": 2.1,
+      "rate": 2.2,
       "default": false
      },
      {
@@ -1904,7 +1904,7 @@
        "あく",
        "ゴースト"
       ],
-      "rate": 97.9,
+      "rate": 97.8,
       "default": true
      }
     ]
