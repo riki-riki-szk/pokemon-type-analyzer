@@ -39,7 +39,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 64.6,
+      "rate": 64.7,
       "default": true
      },
      {
@@ -48,7 +48,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 35.4,
+      "rate": 35.3,
       "default": false
      }
     ]
@@ -370,24 +370,6 @@
    },
    {
     "rank": 19,
-    "id": "basculegion",
-    "en": "Basculegion",
-    "name": "イダイトウ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 20,
     "id": "corviknight",
     "en": "Corviknight",
     "name": "アーマーガア",
@@ -398,6 +380,24 @@
       "types": [
        "ひこう",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 20,
+    "id": "basculegion",
+    "en": "Basculegion",
+    "name": "イダイトウ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
@@ -871,7 +871,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 17.0,
+      "rate": 16.9,
       "default": false
      },
      {
@@ -881,7 +881,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 83.0,
+      "rate": 83.1,
       "default": true
      }
     ]
@@ -1251,7 +1251,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.5,
+      "rate": 95.4,
       "default": true
      },
      {
@@ -1261,7 +1261,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.5,
+      "rate": 4.6,
       "default": false
      }
     ]
@@ -1438,24 +1438,6 @@
    },
    {
     "rank": 25,
-    "id": "sinistcha",
-    "en": "Sinistcha",
-    "name": "ヤバソチャ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 26,
     "id": "indeedee",
     "en": "Indeedee",
     "name": "イエッサン",
@@ -1466,6 +1448,24 @@
       "types": [
        "エスパー",
        "ノーマル"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 26,
+    "id": "sinistcha",
+    "en": "Sinistcha",
+    "name": "ヤバソチャ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
@@ -1813,23 +1813,6 @@
    },
    {
     "rank": 46,
-    "id": "blastoise",
-    "en": "Blastoise",
-    "name": "カメックス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 47,
     "id": "corviknight",
     "en": "Corviknight",
     "name": "アーマーガア",
@@ -1840,6 +1823,23 @@
       "types": [
        "ひこう",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 47,
+    "id": "blastoise",
+    "en": "Blastoise",
+    "name": "カメックス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
       ],
       "rate": null,
       "default": true
