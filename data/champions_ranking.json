@@ -39,7 +39,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 64.9,
+      "rate": 65.0,
       "default": true
      },
      {
@@ -48,7 +48,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 35.1,
+      "rate": 35.0,
       "default": false
      }
     ]
@@ -254,7 +254,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 75.7,
+      "rate": 75.8,
       "default": true
      },
      {
@@ -264,7 +264,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 24.3,
+      "rate": 24.2,
       "default": false
      }
     ]
@@ -513,24 +513,6 @@
    },
    {
     "rank": 27,
-    "id": "rotomwash",
-    "en": "Rotom-Wash",
-    "name": "ウォッシュロトム",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 28,
     "id": "dragonite",
     "en": "Dragonite",
     "name": "カイリュー",
@@ -541,6 +523,24 @@
       "types": [
        "ドラゴン",
        "ひこう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 28,
+    "id": "rotomwash",
+    "en": "Rotom-Wash",
+    "name": "ウォッシュロトム",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "みず"
       ],
       "rate": null,
       "default": true
@@ -639,24 +639,6 @@
    },
    {
     "rank": 34,
-    "id": "kingambit",
-    "en": "Kingambit",
-    "name": "ドドゲザン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "あく",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 35,
     "id": "swampert",
     "en": "Swampert",
     "name": "ラグラージ",
@@ -667,6 +649,24 @@
       "types": [
        "みず",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 35,
+    "id": "kingambit",
+    "en": "Kingambit",
+    "name": "ドドゲザン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "あく",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -843,7 +843,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 22.0,
+      "rate": 22.1,
       "default": false
      },
      {
@@ -853,7 +853,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 78.0,
+      "rate": 77.9,
       "default": true
      }
     ]
@@ -952,7 +952,7 @@
       "types": [
        "あく"
       ],
-      "rate": 4.2,
+      "rate": 4.3,
       "default": false
      },
      {
@@ -962,7 +962,7 @@
        "あく",
        "ゴースト"
       ],
-      "rate": 95.8,
+      "rate": 95.7,
       "default": true
      }
     ]
@@ -1403,7 +1403,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 17.1,
+      "rate": 17.0,
       "default": false
      },
      {
@@ -1413,7 +1413,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 82.9,
+      "rate": 83.0,
       "default": true
      }
     ]
@@ -1561,24 +1561,6 @@
    },
    {
     "rank": 32,
-    "id": "lucario",
-    "en": "Lucario",
-    "name": "ルカリオ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "かくとう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 33,
     "id": "grimmsnarl",
     "en": "Grimmsnarl",
     "name": "オーロンゲ",
@@ -1589,6 +1571,24 @@
       "types": [
        "あく",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 33,
+    "id": "lucario",
+    "en": "Lucario",
+    "name": "ルカリオ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "かくとう",
+       "はがね"
       ],
       "rate": null,
       "default": true
