@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "27/09/2026",
+ "dataDate": "28/09/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -10,24 +10,6 @@
   "singles": [
    {
     "rank": 1,
-    "id": "salamence",
-    "en": "Salamence",
-    "name": "ボーマンダ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ドラゴン",
-       "ひこう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 2,
     "id": "garchomp",
     "en": "Garchomp",
     "name": "ガブリアス",
@@ -50,6 +32,24 @@
       ],
       "rate": 34.7,
       "default": false
+     }
+    ]
+   },
+   {
+    "rank": 2,
+    "id": "salamence",
+    "en": "Salamence",
+    "name": "ボーマンダ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ドラゴン",
+       "ひこう"
+      ],
+      "rate": null,
+      "default": true
      }
     ]
    },
@@ -254,7 +254,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 76.3,
+      "rate": 76.4,
       "default": true
      },
      {
@@ -264,7 +264,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 23.7,
+      "rate": 23.6,
       "default": false
      }
     ]
@@ -406,24 +406,6 @@
    },
    {
     "rank": 21,
-    "id": "indeedee",
-    "en": "Indeedee",
-    "name": "イエッサン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "エスパー",
-       "ノーマル"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 22,
     "id": "metagross",
     "en": "Metagross",
     "name": "メタグロス",
@@ -434,6 +416,24 @@
       "types": [
        "はがね",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 22,
+    "id": "indeedee",
+    "en": "Indeedee",
+    "name": "イエッサン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "エスパー",
+       "ノーマル"
       ],
       "rate": null,
       "default": true
@@ -1006,24 +1006,6 @@
    },
    {
     "rank": 3,
-    "id": "salamence",
-    "en": "Salamence",
-    "name": "ボーマンダ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ドラゴン",
-       "ひこう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 4,
     "id": "incineroar",
     "en": "Incineroar",
     "name": "ガオガエン",
@@ -1034,6 +1016,24 @@
       "types": [
        "ほのお",
        "あく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 4,
+    "id": "salamence",
+    "en": "Salamence",
+    "name": "ボーマンダ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ドラゴン",
+       "ひこう"
       ],
       "rate": null,
       "default": true
@@ -1135,7 +1135,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 55.5,
+      "rate": 55.2,
       "default": true
      },
      {
@@ -1144,7 +1144,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 44.5,
+      "rate": 44.8,
       "default": false
      }
     ]
@@ -1403,7 +1403,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 16.9,
+      "rate": 16.8,
       "default": false
      },
      {
@@ -1413,7 +1413,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 83.1,
+      "rate": 83.2,
       "default": true
      }
     ]
