@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "28/09/2026",
+ "dataDate": "29/09/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -254,7 +254,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 76.8,
+      "rate": 76.9,
       "default": true
      },
      {
@@ -264,7 +264,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 23.2,
+      "rate": 23.1,
       "default": false
      }
     ]
@@ -941,16 +941,16 @@
    },
    {
     "rank": 50,
-    "id": "armarouge",
-    "en": "Armarouge",
-    "name": "グレンアルマ",
+    "id": "tyranitar",
+    "en": "Tyranitar",
+    "name": "バンギラス",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "ほのお",
-       "エスパー"
+       "いわ",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -1125,7 +1125,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 54.2,
+      "rate": 53.9,
       "default": true
      },
      {
@@ -1134,7 +1134,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 45.8,
+      "rate": 46.1,
       "default": false
      }
     ]
@@ -1393,7 +1393,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 16.7,
+      "rate": 16.6,
       "default": false
      },
      {
@@ -1403,7 +1403,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 83.3,
+      "rate": 83.4,
       "default": true
      }
     ]
