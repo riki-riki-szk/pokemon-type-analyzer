@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "29/09/2026",
+ "dataDate": "30/09/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -271,34 +271,6 @@
    },
    {
     "rank": 14,
-    "id": "gyarados",
-    "en": "Gyarados",
-    "name": "ギャラドス",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "みず",
-       "ひこう"
-      ],
-      "rate": 77.5,
-      "default": true
-     },
-     {
-      "key": "mega",
-      "label": "メガ",
-      "types": [
-       "みず",
-       "あく"
-      ],
-      "rate": 22.5,
-      "default": false
-     }
-    ]
-   },
-   {
-    "rank": 15,
     "id": "sneasler",
     "en": "Sneasler",
     "name": "オオニューラ",
@@ -312,6 +284,34 @@
       ],
       "rate": null,
       "default": true
+     }
+    ]
+   },
+   {
+    "rank": 15,
+    "id": "gyarados",
+    "en": "Gyarados",
+    "name": "ギャラドス",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "みず",
+       "ひこう"
+      ],
+      "rate": 77.4,
+      "default": true
+     },
+     {
+      "key": "mega",
+      "label": "メガ",
+      "types": [
+       "みず",
+       "あく"
+      ],
+      "rate": 22.6,
+      "default": false
      }
     ]
    },
@@ -827,7 +827,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 16.2,
+      "rate": 16.1,
       "default": false
      },
      {
@@ -837,7 +837,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 83.8,
+      "rate": 83.9,
       "default": true
      }
     ]
@@ -1125,7 +1125,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 52.7,
+      "rate": 52.5,
       "default": true
      },
      {
@@ -1134,7 +1134,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 47.3,
+      "rate": 47.5,
       "default": false
      }
     ]
@@ -1481,24 +1481,6 @@
    },
    {
     "rank": 28,
-    "id": "excadrill",
-    "en": "Excadrill",
-    "name": "ドリュウズ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "じめん",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 29,
     "id": "volcarona",
     "en": "Volcarona",
     "name": "ウルガモス",
@@ -1509,6 +1491,24 @@
       "types": [
        "むし",
        "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 29,
+    "id": "excadrill",
+    "en": "Excadrill",
+    "name": "ドリュウズ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "じめん",
+       "はがね"
       ],
       "rate": null,
       "default": true
