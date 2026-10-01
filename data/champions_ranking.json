@@ -289,6 +289,24 @@
    },
    {
     "rank": 15,
+    "id": "glimmora",
+    "en": "Glimmora",
+    "name": "キラフロル",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 16,
     "id": "gyarados",
     "en": "Gyarados",
     "name": "ギャラドス",
@@ -312,24 +330,6 @@
       ],
       "rate": 22.7,
       "default": false
-     }
-    ]
-   },
-   {
-    "rank": 16,
-    "id": "glimmora",
-    "en": "Glimmora",
-    "name": "キラフロル",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
      }
     ]
    },
@@ -1086,6 +1086,33 @@
    },
    {
     "rank": 8,
+    "id": "garchomp",
+    "en": "Garchomp",
+    "name": "ガブリアス",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "ドラゴン",
+       "じめん"
+      ],
+      "rate": 51.4,
+      "default": true
+     },
+     {
+      "key": "megaz",
+      "label": "メガZ",
+      "types": [
+       "ドラゴン"
+      ],
+      "rate": 48.6,
+      "default": false
+     }
+    ]
+   },
+   {
+    "rank": 9,
     "id": "golisopod",
     "en": "Golisopod",
     "name": "グソクムシャ",
@@ -1109,33 +1136,6 @@
       ],
       "rate": 98.3,
       "default": true
-     }
-    ]
-   },
-   {
-    "rank": 9,
-    "id": "garchomp",
-    "en": "Garchomp",
-    "name": "ガブリアス",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "ドラゴン",
-       "じめん"
-      ],
-      "rate": 51.7,
-      "default": true
-     },
-     {
-      "key": "megaz",
-      "label": "メガZ",
-      "types": [
-       "ドラゴン"
-      ],
-      "rate": 48.3,
-      "default": false
      }
     ]
    },
@@ -1393,7 +1393,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 16.4,
+      "rate": 16.3,
       "default": false
      },
      {
@@ -1403,7 +1403,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 83.6,
+      "rate": 83.7,
       "default": true
      }
     ]
@@ -1785,24 +1785,6 @@
    },
    {
     "rank": 45,
-    "id": "pawmot",
-    "en": "Pawmot",
-    "name": "パーモット",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 46,
     "id": "corviknight",
     "en": "Corviknight",
     "name": "アーマーガア",
@@ -1813,6 +1795,24 @@
       "types": [
        "ひこう",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 46,
+    "id": "pawmot",
+    "en": "Pawmot",
+    "name": "パーモット",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "かくとう"
       ],
       "rate": null,
       "default": true
