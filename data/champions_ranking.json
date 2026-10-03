@@ -225,24 +225,6 @@
    },
    {
     "rank": 12,
-    "id": "meowscarada",
-    "en": "Meowscarada",
-    "name": "マスカーニャ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 13,
     "id": "charizard",
     "en": "Charizard",
     "name": "リザードン",
@@ -266,6 +248,24 @@
       ],
       "rate": 22.2,
       "default": false
+     }
+    ]
+   },
+   {
+    "rank": 13,
+    "id": "meowscarada",
+    "en": "Meowscarada",
+    "name": "マスカーニャ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
+       "あく"
+      ],
+      "rate": null,
+      "default": true
      }
     ]
    },
@@ -353,7 +353,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 77.0,
+      "rate": 76.9,
       "default": true
      },
      {
@@ -363,7 +363,7 @@
        "みず",
        "あく"
       ],
-      "rate": 23.0,
+      "rate": 23.1,
       "default": false
      }
     ]
@@ -1079,7 +1079,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 49.8,
+      "rate": 49.7,
       "default": false
      },
      {
@@ -1088,7 +1088,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 50.2,
+      "rate": 50.3,
       "default": true
      }
     ]
@@ -1375,7 +1375,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 16.1,
+      "rate": 16.0,
       "default": false
      },
      {
@@ -1385,7 +1385,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 83.9,
+      "rate": 84.0,
       "default": true
      }
     ]
