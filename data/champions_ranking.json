@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "05/10/2026",
+ "dataDate": "06/10/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -1079,7 +1079,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 48.6,
+      "rate": 48.5,
       "default": false
      },
      {
@@ -1088,7 +1088,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 51.4,
+      "rate": 51.5,
       "default": true
      }
     ]
@@ -1375,7 +1375,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 15.6,
+      "rate": 15.5,
       "default": false
      },
      {
@@ -1385,7 +1385,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 84.4,
+      "rate": 84.5,
       "default": true
      }
     ]
@@ -1517,23 +1517,6 @@
    },
    {
     "rank": 30,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 31,
     "id": "politoed",
     "en": "Politoed",
     "name": "ニョロトノ",
@@ -1543,6 +1526,23 @@
       "label": null,
       "types": [
        "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 31,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
