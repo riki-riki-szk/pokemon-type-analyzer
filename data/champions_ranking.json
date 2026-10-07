@@ -1,6 +1,6 @@
 {
  "season": "M6",
- "dataDate": "06/10/2026",
+ "dataDate": "07/10/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -1061,7 +1061,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 48.3,
+      "rate": 48.2,
       "default": false
      },
      {
@@ -1070,7 +1070,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 51.7,
+      "rate": 51.8,
       "default": true
      }
     ]
@@ -1874,16 +1874,16 @@
    },
    {
     "rank": 50,
-    "id": "hatterene",
-    "en": "Hatterene",
-    "name": "ブリムオン",
+    "id": "dragapult",
+    "en": "Dragapult",
+    "name": "ドラパルト",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "エスパー",
-       "フェアリー"
+       "ドラゴン",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
