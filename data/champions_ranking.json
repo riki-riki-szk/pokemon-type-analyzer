@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "23/10/2026",
+ "dataDate": "24/10/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -118,6 +118,34 @@
    },
    {
     "rank": 6,
+    "id": "charizard",
+    "en": "Charizard",
+    "name": "リザードン",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "ほのお",
+       "ひこう"
+      ],
+      "rate": 68.0,
+      "default": true
+     },
+     {
+      "key": "megax",
+      "label": "メガX",
+      "types": [
+       "ほのお",
+       "ドラゴン"
+      ],
+      "rate": 32.0,
+      "default": false
+     }
+    ]
+   },
+   {
+    "rank": 7,
     "id": "lucario",
     "en": "Lucario",
     "name": "ルカリオ",
@@ -131,34 +159,6 @@
       ],
       "rate": null,
       "default": true
-     }
-    ]
-   },
-   {
-    "rank": 7,
-    "id": "charizard",
-    "en": "Charizard",
-    "name": "リザードン",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "ほのお",
-       "ひこう"
-      ],
-      "rate": 68.1,
-      "default": true
-     },
-     {
-      "key": "megax",
-      "label": "メガX",
-      "types": [
-       "ほのお",
-       "ドラゴン"
-      ],
-      "rate": 31.9,
-      "default": false
      }
     ]
    },
@@ -407,7 +407,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 53.9,
+      "rate": 53.8,
       "default": true
      },
      {
@@ -417,7 +417,7 @@
        "みず",
        "あく"
       ],
-      "rate": 46.1,
+      "rate": 46.2,
       "default": false
      }
     ]
@@ -872,7 +872,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 13.3,
+      "rate": 13.2,
       "default": false
      },
      {
@@ -882,7 +882,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 86.7,
+      "rate": 86.8,
       "default": true
      }
     ]
@@ -991,7 +991,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 62.5,
+      "rate": 62.6,
       "default": true
      },
      {
@@ -1000,7 +1000,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 37.5,
+      "rate": 37.4,
       "default": false
      }
     ]
@@ -1213,24 +1213,6 @@
    },
    {
     "rank": 14,
-    "id": "farigiraf",
-    "en": "Farigiraf",
-    "name": "リキキリン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ノーマル",
-       "エスパー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 15,
     "id": "golisopod",
     "en": "Golisopod",
     "name": "グソクムシャ",
@@ -1253,6 +1235,24 @@
        "はがね"
       ],
       "rate": 98.2,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 15,
+    "id": "farigiraf",
+    "en": "Farigiraf",
+    "name": "リキキリン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ノーマル",
+       "エスパー"
+      ],
+      "rate": null,
       "default": true
      }
     ]
@@ -1323,7 +1323,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 9.0,
+      "rate": 8.9,
       "default": false
      },
      {
@@ -1333,7 +1333,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 91.0,
+      "rate": 91.1,
       "default": true
      }
     ]
@@ -1447,24 +1447,6 @@
    },
    {
     "rank": 26,
-    "id": "metagross",
-    "en": "Metagross",
-    "name": "メタグロス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "はがね",
-       "エスパー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 27,
     "id": "sinistcha",
     "en": "Sinistcha",
     "name": "ヤバソチャ",
@@ -1475,6 +1457,24 @@
       "types": [
        "くさ",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 27,
+    "id": "metagross",
+    "en": "Metagross",
+    "name": "メタグロス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "はがね",
+       "エスパー"
       ],
       "rate": null,
       "default": true
@@ -1875,16 +1875,16 @@
    },
    {
     "rank": 50,
-    "id": "corviknight",
-    "en": "Corviknight",
-    "name": "アーマーガア",
+    "id": "camerupt",
+    "en": "Camerupt",
+    "name": "バクーダ",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "ひこう",
-       "はがね"
+       "ほのお",
+       "じめん"
       ],
       "rate": null,
       "default": true
