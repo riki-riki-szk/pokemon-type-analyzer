@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "25/10/2026",
+ "dataDate": "26/10/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -101,7 +101,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.7,
+      "rate": 1.8,
       "default": false
      },
      {
@@ -111,7 +111,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 98.3,
+      "rate": 98.2,
       "default": true
      }
     ]
@@ -129,7 +129,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 67.6,
+      "rate": 67.5,
       "default": true
      },
      {
@@ -139,7 +139,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 32.4,
+      "rate": 32.5,
       "default": false
      }
     ]
@@ -407,7 +407,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 53.2,
+      "rate": 53.1,
       "default": true
      },
      {
@@ -417,7 +417,7 @@
        "みず",
        "あく"
       ],
-      "rate": 46.8,
+      "rate": 46.9,
       "default": false
      }
     ]
@@ -602,23 +602,6 @@
    },
    {
     "rank": 32,
-    "id": "blastoise",
-    "en": "Blastoise",
-    "name": "カメックス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 33,
     "id": "toxapex",
     "en": "Toxapex",
     "name": "ドヒドイデ",
@@ -628,6 +611,23 @@
       "label": null,
       "types": [
        "どく",
+       "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 33,
+    "id": "blastoise",
+    "en": "Blastoise",
+    "name": "カメックス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
        "みず"
       ],
       "rate": null,
@@ -991,7 +991,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 63.0,
+      "rate": 63.1,
       "default": true
      },
      {
@@ -1000,7 +1000,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 37.0,
+      "rate": 36.9,
       "default": false
      }
     ]
@@ -1071,7 +1071,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.5,
+      "rate": 95.4,
       "default": true
      },
      {
@@ -1081,7 +1081,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.5,
+      "rate": 4.6,
       "default": false
      }
     ]
@@ -1571,24 +1571,6 @@
    },
    {
     "rank": 33,
-    "id": "swampert",
-    "en": "Swampert",
-    "name": "ラグラージ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "じめん"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 34,
     "id": "basculegionf",
     "en": "Basculegion-F",
     "name": "イダイトウ♀",
@@ -1599,6 +1581,24 @@
       "types": [
        "みず",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 34,
+    "id": "swampert",
+    "en": "Swampert",
+    "name": "ラグラージ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "じめん"
       ],
       "rate": null,
       "default": true
