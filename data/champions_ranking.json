@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "26/10/2026",
+ "dataDate": "27/10/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 62.8,
+      "rate": 62.9,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 37.2,
+      "rate": 37.1,
       "default": false
      }
     ]
@@ -129,7 +129,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 67.5,
+      "rate": 67.4,
       "default": true
      },
      {
@@ -139,7 +139,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 32.5,
+      "rate": 32.6,
       "default": false
      }
     ]
@@ -407,7 +407,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 53.1,
+      "rate": 52.8,
       "default": true
      },
      {
@@ -417,7 +417,7 @@
        "みず",
        "あく"
       ],
-      "rate": 46.9,
+      "rate": 47.2,
       "default": false
      }
     ]
@@ -620,23 +620,6 @@
    },
    {
     "rank": 33,
-    "id": "blastoise",
-    "en": "Blastoise",
-    "name": "カメックス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 34,
     "id": "swampert",
     "en": "Swampert",
     "name": "ラグラージ",
@@ -647,6 +630,23 @@
       "types": [
        "みず",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 34,
+    "id": "blastoise",
+    "en": "Blastoise",
+    "name": "カメックス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
       ],
       "rate": null,
       "default": true
@@ -844,7 +844,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 18.5,
+      "rate": 18.4,
       "default": false
      },
      {
@@ -854,7 +854,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 81.5,
+      "rate": 81.6,
       "default": true
      }
     ]
@@ -872,7 +872,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 13.1,
+      "rate": 13.0,
       "default": false
      },
      {
@@ -882,7 +882,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 86.9,
+      "rate": 87.0,
       "default": true
      }
     ]
@@ -980,33 +980,6 @@
    },
    {
     "rank": 2,
-    "id": "garchomp",
-    "en": "Garchomp",
-    "name": "ガブリアス",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "ドラゴン",
-       "じめん"
-      ],
-      "rate": 63.1,
-      "default": true
-     },
-     {
-      "key": "megaz",
-      "label": "メガZ",
-      "types": [
-       "ドラゴン"
-      ],
-      "rate": 36.9,
-      "default": false
-     }
-    ]
-   },
-   {
-    "rank": 3,
     "id": "rillaboom",
     "en": "Rillaboom",
     "name": "ゴリランダー",
@@ -1019,6 +992,33 @@
       ],
       "rate": null,
       "default": true
+     }
+    ]
+   },
+   {
+    "rank": 3,
+    "id": "garchomp",
+    "en": "Garchomp",
+    "name": "ガブリアス",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "ドラゴン",
+       "じめん"
+      ],
+      "rate": 63.4,
+      "default": true
+     },
+     {
+      "key": "megaz",
+      "label": "メガZ",
+      "types": [
+       "ドラゴン"
+      ],
+      "rate": 36.6,
+      "default": false
      }
     ]
    },
@@ -1306,7 +1306,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 8.8,
+      "rate": 8.7,
       "default": false
      },
      {
@@ -1316,7 +1316,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 91.2,
+      "rate": 91.3,
       "default": true
      }
     ]
@@ -1393,24 +1393,6 @@
    },
    {
     "rank": 23,
-    "id": "grimmsnarl",
-    "en": "Grimmsnarl",
-    "name": "オーロンゲ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "あく",
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 24,
     "id": "indeedee",
     "en": "Indeedee",
     "name": "イエッサン",
@@ -1421,6 +1403,24 @@
       "types": [
        "エスパー",
        "ノーマル"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 24,
+    "id": "grimmsnarl",
+    "en": "Grimmsnarl",
+    "name": "オーロンゲ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "あく",
+       "フェアリー"
       ],
       "rate": null,
       "default": true
