@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "30/10/2026",
+ "dataDate": "31/10/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -101,7 +101,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.9,
+      "rate": 2.0,
       "default": false
      },
      {
@@ -111,7 +111,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 98.1,
+      "rate": 98.0,
       "default": true
      }
     ]
@@ -129,7 +129,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 67.2,
+      "rate": 67.1,
       "default": true
      },
      {
@@ -139,7 +139,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 32.8,
+      "rate": 32.9,
       "default": false
      }
     ]
@@ -407,7 +407,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 52.0,
+      "rate": 51.9,
       "default": true
      },
      {
@@ -417,7 +417,7 @@
        "みず",
        "あく"
       ],
-      "rate": 48.0,
+      "rate": 48.1,
       "default": false
      }
     ]
@@ -602,24 +602,6 @@
    },
    {
     "rank": 32,
-    "id": "toxapex",
-    "en": "Toxapex",
-    "name": "ドヒドイデ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "どく",
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 33,
     "id": "volcarona",
     "en": "Volcarona",
     "name": "ウルガモス",
@@ -637,17 +619,17 @@
     ]
    },
    {
-    "rank": 34,
-    "id": "swampert",
-    "en": "Swampert",
-    "name": "ラグラージ",
+    "rank": 33,
+    "id": "toxapex",
+    "en": "Toxapex",
+    "name": "ドヒドイデ",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "みず",
-       "じめん"
+       "どく",
+       "みず"
       ],
       "rate": null,
       "default": true
@@ -655,7 +637,7 @@
     ]
    },
    {
-    "rank": 35,
+    "rank": 34,
     "id": "pawmot",
     "en": "Pawmot",
     "name": "パーモット",
@@ -666,6 +648,24 @@
       "types": [
        "でんき",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 35,
+    "id": "swampert",
+    "en": "Swampert",
+    "name": "ラグラージ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "じめん"
       ],
       "rate": null,
       "default": true
@@ -780,6 +780,33 @@
    },
    {
     "rank": 42,
+    "id": "clefable",
+    "en": "Clefable",
+    "name": "ピクシー",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "フェアリー"
+      ],
+      "rate": 16.9,
+      "default": false
+     },
+     {
+      "key": "mega",
+      "label": "メガ",
+      "types": [
+       "フェアリー",
+       "ひこう"
+      ],
+      "rate": 83.1,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 43,
     "id": "tyranitar",
     "en": "Tyranitar",
     "name": "バンギラス",
@@ -792,33 +819,6 @@
        "あく"
       ],
       "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 43,
-    "id": "clefable",
-    "en": "Clefable",
-    "name": "ピクシー",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "フェアリー"
-      ],
-      "rate": 17.2,
-      "default": false
-     },
-     {
-      "key": "mega",
-      "label": "メガ",
-      "types": [
-       "フェアリー",
-       "ひこう"
-      ],
-      "rate": 82.8,
       "default": true
      }
     ]
@@ -1009,7 +1009,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 64.8,
+      "rate": 65.0,
       "default": true
      },
      {
@@ -1018,7 +1018,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 35.2,
+      "rate": 35.0,
       "default": false
      }
     ]
@@ -1072,7 +1072,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.1,
+      "rate": 95.0,
       "default": true
      },
      {
@@ -1082,7 +1082,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.9,
+      "rate": 5.0,
       "default": false
      }
     ]
@@ -1394,24 +1394,6 @@
    },
    {
     "rank": 23,
-    "id": "volcarona",
-    "en": "Volcarona",
-    "name": "ウルガモス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "むし",
-       "ほのお"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 24,
     "id": "sinistcha",
     "en": "Sinistcha",
     "name": "ヤバソチャ",
@@ -1422,6 +1404,24 @@
       "types": [
        "くさ",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 24,
+    "id": "volcarona",
+    "en": "Volcarona",
+    "name": "ウルガモス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "むし",
+       "ほのお"
       ],
       "rate": null,
       "default": true
@@ -1573,23 +1573,6 @@
    },
    {
     "rank": 33,
-    "id": "politoed",
-    "en": "Politoed",
-    "name": "ニョロトノ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 34,
     "id": "swampert",
     "en": "Swampert",
     "name": "ラグラージ",
@@ -1600,6 +1583,23 @@
       "types": [
        "みず",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 34,
+    "id": "politoed",
+    "en": "Politoed",
+    "name": "ニョロトノ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
       ],
       "rate": null,
       "default": true
@@ -1661,24 +1661,6 @@
    },
    {
     "rank": 38,
-    "id": "glimmora",
-    "en": "Glimmora",
-    "name": "キラフロル",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 39,
     "id": "gengar",
     "en": "Gengar",
     "name": "ゲンガー",
@@ -1688,6 +1670,24 @@
       "label": null,
       "types": [
        "ゴースト",
+       "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 39,
+    "id": "glimmora",
+    "en": "Glimmora",
+    "name": "キラフロル",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
        "どく"
       ],
       "rate": null,
@@ -1840,24 +1840,6 @@
    },
    {
     "rank": 48,
-    "id": "lucario",
-    "en": "Lucario",
-    "name": "ルカリオ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "かくとう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 49,
     "id": "camerupt",
     "en": "Camerupt",
     "name": "バクーダ",
@@ -1868,6 +1850,24 @@
       "types": [
        "ほのお",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 49,
+    "id": "lucario",
+    "en": "Lucario",
+    "name": "ルカリオ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "かくとう",
+       "はがね"
       ],
       "rate": null,
       "default": true
