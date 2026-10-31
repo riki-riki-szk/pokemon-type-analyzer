@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "31/10/2026",
+ "dataDate": "01/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 63.2,
+      "rate": 63.3,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 36.8,
+      "rate": 36.7,
       "default": false
      }
     ]
@@ -790,7 +790,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 16.9,
+      "rate": 16.8,
       "default": false
      },
      {
@@ -800,7 +800,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 83.1,
+      "rate": 83.2,
       "default": true
      }
     ]
@@ -1009,7 +1009,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 65.0,
+      "rate": 65.1,
       "default": true
      },
      {
@@ -1018,7 +1018,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 35.0,
+      "rate": 34.9,
       "default": false
      }
     ]
@@ -1207,7 +1207,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.9,
+      "rate": 2.0,
       "default": false
      },
      {
@@ -1217,7 +1217,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 98.1,
+      "rate": 98.0,
       "default": true
      }
     ]
@@ -1376,24 +1376,6 @@
    },
    {
     "rank": 22,
-    "id": "indeedee",
-    "en": "Indeedee",
-    "name": "イエッサン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "エスパー",
-       "ノーマル"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 23,
     "id": "sinistcha",
     "en": "Sinistcha",
     "name": "ヤバソチャ",
@@ -1404,6 +1386,24 @@
       "types": [
        "くさ",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 23,
+    "id": "indeedee",
+    "en": "Indeedee",
+    "name": "イエッサン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "エスパー",
+       "ノーマル"
       ],
       "rate": null,
       "default": true
