@@ -780,24 +780,6 @@
    },
    {
     "rank": 42,
-    "id": "skeledirge",
-    "en": "Skeledirge",
-    "name": "ラウドボーン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 43,
     "id": "tyranitar",
     "en": "Tyranitar",
     "name": "バンギラス",
@@ -815,7 +797,7 @@
     ]
    },
    {
-    "rank": 44,
+    "rank": 43,
     "id": "clefable",
     "en": "Clefable",
     "name": "ピクシー",
@@ -837,6 +819,24 @@
        "ひこう"
       ],
       "rate": 82.8,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 44,
+    "id": "skeledirge",
+    "en": "Skeledirge",
+    "name": "ラウドボーン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお",
+       "ゴースト"
+      ],
+      "rate": null,
       "default": true
      }
     ]
@@ -1009,7 +1009,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 64.7,
+      "rate": 64.8,
       "default": true
      },
      {
@@ -1018,7 +1018,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 35.3,
+      "rate": 35.2,
       "default": false
      }
     ]
