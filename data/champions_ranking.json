@@ -1278,24 +1278,6 @@
    },
    {
     "rank": 17,
-    "id": "tyranitar",
-    "en": "Tyranitar",
-    "name": "バンギラス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 18,
     "id": "staraptor",
     "en": "Staraptor",
     "name": "ムクホーク",
@@ -1318,6 +1300,24 @@
        "ひこう"
       ],
       "rate": 91.8,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 18,
+    "id": "tyranitar",
+    "en": "Tyranitar",
+    "name": "バンギラス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "あく"
+      ],
+      "rate": null,
       "default": true
      }
     ]
