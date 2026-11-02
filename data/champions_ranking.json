@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "01/11/2026",
+ "dataDate": "02/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 63.3,
+      "rate": 63.4,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 36.7,
+      "rate": 36.6,
       "default": false
      }
     ]
@@ -407,7 +407,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 51.8,
+      "rate": 51.7,
       "default": true
      },
      {
@@ -417,7 +417,7 @@
        "みず",
        "あく"
       ],
-      "rate": 48.2,
+      "rate": 48.3,
       "default": false
      }
     ]
@@ -674,6 +674,24 @@
    },
    {
     "rank": 36,
+    "id": "kingambit",
+    "en": "Kingambit",
+    "name": "ドドゲザン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "あく",
+       "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 37,
     "id": "scizor",
     "en": "Scizor",
     "name": "ハッサム",
@@ -691,7 +709,7 @@
     ]
    },
    {
-    "rank": 37,
+    "rank": 38,
     "id": "floetteeternal",
     "en": "Floette-Eternal",
     "name": "フラエッテ(えいえんのはな)",
@@ -701,24 +719,6 @@
       "label": null,
       "types": [
        "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 38,
-    "id": "kingambit",
-    "en": "Kingambit",
-    "name": "ドドゲザン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "あく",
-       "はがね"
       ],
       "rate": null,
       "default": true
@@ -790,7 +790,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 16.6,
+      "rate": 16.4,
       "default": false
      },
      {
@@ -800,7 +800,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 83.4,
+      "rate": 83.6,
       "default": true
      }
     ]
@@ -843,6 +843,34 @@
    },
    {
     "rank": 45,
+    "id": "staraptor",
+    "en": "Staraptor",
+    "name": "ムクホーク",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "ノーマル",
+       "ひこう"
+      ],
+      "rate": 12.4,
+      "default": false
+     },
+     {
+      "key": "mega",
+      "label": "メガ",
+      "types": [
+       "かくとう",
+       "ひこう"
+      ],
+      "rate": 87.6,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 46,
     "id": "empoleon",
     "en": "Empoleon",
     "name": "エンペルト",
@@ -855,34 +883,6 @@
        "はがね"
       ],
       "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 46,
-    "id": "staraptor",
-    "en": "Staraptor",
-    "name": "ムクホーク",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "ノーマル",
-       "ひこう"
-      ],
-      "rate": 12.5,
-      "default": false
-     },
-     {
-      "key": "mega",
-      "label": "メガ",
-      "types": [
-       "かくとう",
-       "ひこう"
-      ],
-      "rate": 87.5,
       "default": true
      }
     ]
@@ -943,15 +943,14 @@
    },
    {
     "rank": 50,
-    "id": "hatterene",
-    "en": "Hatterene",
-    "name": "ブリムオン",
+    "id": "sylveon",
+    "en": "Sylveon",
+    "name": "ニンフィア",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "エスパー",
        "フェアリー"
       ],
       "rate": null,
@@ -1009,7 +1008,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 65.3,
+      "rate": 65.6,
       "default": true
      },
      {
@@ -1018,7 +1017,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 34.7,
+      "rate": 34.4,
       "default": false
      }
     ]
@@ -1289,7 +1288,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 8.2,
+      "rate": 8.1,
       "default": false
      },
      {
@@ -1299,7 +1298,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 91.8,
+      "rate": 91.9,
       "default": true
      }
     ]
@@ -1358,24 +1357,6 @@
    },
    {
     "rank": 21,
-    "id": "venusaur",
-    "en": "Venusaur",
-    "name": "フシギバナ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 22,
     "id": "sinistcha",
     "en": "Sinistcha",
     "name": "ヤバソチャ",
@@ -1386,6 +1367,24 @@
       "types": [
        "くさ",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 22,
+    "id": "venusaur",
+    "en": "Venusaur",
+    "name": "フシギバナ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
+       "どく"
       ],
       "rate": null,
       "default": true
@@ -1537,24 +1536,6 @@
    },
    {
     "rank": 31,
-    "id": "basculegionf",
-    "en": "Basculegion-F",
-    "name": "イダイトウ♀",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 32,
     "id": "dragonite",
     "en": "Dragonite",
     "name": "カイリュー",
@@ -1565,6 +1546,24 @@
       "types": [
        "ドラゴン",
        "ひこう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 32,
+    "id": "basculegionf",
+    "en": "Basculegion-F",
+    "name": "イダイトウ♀",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
@@ -1840,24 +1839,6 @@
    },
    {
     "rank": 48,
-    "id": "lucario",
-    "en": "Lucario",
-    "name": "ルカリオ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "かくとう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 49,
     "id": "camerupt",
     "en": "Camerupt",
     "name": "バクーダ",
@@ -1868,6 +1849,24 @@
       "types": [
        "ほのお",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 49,
+    "id": "lucario",
+    "en": "Lucario",
+    "name": "ルカリオ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "かくとう",
+       "はがね"
       ],
       "rate": null,
       "default": true
