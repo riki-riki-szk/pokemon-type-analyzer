@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 63.4,
+      "rate": 63.5,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 36.6,
+      "rate": 36.5,
       "default": false
      }
     ]
@@ -407,7 +407,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 51.7,
+      "rate": 51.6,
       "default": true
      },
      {
@@ -417,7 +417,7 @@
        "みず",
        "あく"
       ],
-      "rate": 48.3,
+      "rate": 48.4,
       "default": false
      }
     ]
@@ -584,24 +584,6 @@
    },
    {
     "rank": 31,
-    "id": "ninetalesalola",
-    "en": "Ninetales-Alola",
-    "name": "アローラキュウコン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "こおり",
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 32,
     "id": "pawmot",
     "en": "Pawmot",
     "name": "パーモット",
@@ -612,6 +594,24 @@
       "types": [
        "でんき",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 32,
+    "id": "ninetalesalola",
+    "en": "Ninetales-Alola",
+    "name": "アローラキュウコン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "こおり",
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -692,6 +692,23 @@
    },
    {
     "rank": 37,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 38,
     "id": "scizor",
     "en": "Scizor",
     "name": "ハッサム",
@@ -702,23 +719,6 @@
       "types": [
        "むし",
        "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 38,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -790,7 +790,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 16.4,
+      "rate": 16.2,
       "default": false
      },
      {
@@ -800,7 +800,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 83.6,
+      "rate": 83.8,
       "default": true
      }
     ]
@@ -854,7 +854,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 12.5,
+      "rate": 12.4,
       "default": false
      },
      {
@@ -864,7 +864,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 87.5,
+      "rate": 87.6,
       "default": true
      }
     ]
@@ -1008,7 +1008,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 65.7,
+      "rate": 66.0,
       "default": true
      },
      {
@@ -1017,7 +1017,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 34.3,
+      "rate": 34.0,
       "default": false
      }
     ]
@@ -1042,6 +1042,34 @@
    },
    {
     "rank": 5,
+    "id": "charizard",
+    "en": "Charizard",
+    "name": "リザードン",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "ほのお",
+       "ひこう"
+      ],
+      "rate": 94.8,
+      "default": true
+     },
+     {
+      "key": "megax",
+      "label": "メガX",
+      "types": [
+       "ほのお",
+       "ドラゴン"
+      ],
+      "rate": 5.2,
+      "default": false
+     }
+    ]
+   },
+   {
+    "rank": 6,
     "id": "archaludon",
     "en": "Archaludon",
     "name": "ブリジュラス",
@@ -1055,34 +1083,6 @@
       ],
       "rate": null,
       "default": true
-     }
-    ]
-   },
-   {
-    "rank": 6,
-    "id": "charizard",
-    "en": "Charizard",
-    "name": "リザードン",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "ほのお",
-       "ひこう"
-      ],
-      "rate": 94.9,
-      "default": true
-     },
-     {
-      "key": "megax",
-      "label": "メガX",
-      "types": [
-       "ほのお",
-       "ドラゴン"
-      ],
-      "rate": 5.1,
-      "default": false
      }
     ]
    },
@@ -1270,7 +1270,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 8.1,
+      "rate": 8.0,
       "default": false
      },
      {
@@ -1280,31 +1280,13 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 91.9,
+      "rate": 92.0,
       "default": true
      }
     ]
    },
    {
     "rank": 17,
-    "id": "salamence",
-    "en": "Salamence",
-    "name": "ボーマンダ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ドラゴン",
-       "ひこう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 18,
     "id": "tyranitar",
     "en": "Tyranitar",
     "name": "バンギラス",
@@ -1315,6 +1297,24 @@
       "types": [
        "いわ",
        "あく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 18,
+    "id": "salamence",
+    "en": "Salamence",
+    "name": "ボーマンダ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ドラゴン",
+       "ひこう"
       ],
       "rate": null,
       "default": true
@@ -1857,24 +1857,6 @@
    },
    {
     "rank": 49,
-    "id": "lucario",
-    "en": "Lucario",
-    "name": "ルカリオ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "かくとう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 50,
     "id": "blaziken",
     "en": "Blaziken",
     "name": "バシャーモ",
@@ -1885,6 +1867,24 @@
       "types": [
        "ほのお",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 50,
+    "id": "lucario",
+    "en": "Lucario",
+    "name": "ルカリオ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "かくとう",
+       "はがね"
       ],
       "rate": null,
       "default": true
