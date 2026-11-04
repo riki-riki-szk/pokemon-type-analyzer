@@ -46,6 +46,7 @@
  "Kommo-o": "ジャラランガ",
  "Lucario": "ルカリオ",
  "Mamoswine": "マンムー",
+ "Maushold": "イッカネズミ",
  "Mawile": "クチート",
  "Meowscarada": "マスカーニャ",
  "Metagross": "メタグロス",
@@ -56,6 +57,7 @@
  "Pelipper": "ペリッパー",
  "Politoed": "ニョロトノ",
  "Primarina": "アシレーヌ",
+ "Pyroar": "カエンジシ",
  "Raichu": "ライチュウ",
  "Rillaboom": "ゴリランダー",
  "Sableye": "ヤミラミ",
@@ -64,8 +66,10 @@
  "Scizor": "ハッサム",
  "Sinistcha": "ヤバソチャ",
  "Skeledirge": "ラウドボーン",
+ "Slowking": "ヤドキング",
  "Sneasler": "オオニューラ",
  "Staraptor": "ムクホーク",
+ "Starmie": "スターミー",
  "Swampert": "ラグラージ",
  "Sylveon": "ニンフィア",
  "Talonflame": "ファイアロー",
@@ -76,5 +80,6 @@
  "Vanilluxe": "バイバニラ",
  "Venusaur": "フシギバナ",
  "Volcarona": "ウルガモス",
- "Whimsicott": "エルフーン"
+ "Whimsicott": "エルフーン",
+ "Zoroark": "ゾロアーク"
 }
