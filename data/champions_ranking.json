@@ -1008,7 +1008,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 66.0,
+      "rate": 66.1,
       "default": true
      },
      {
@@ -1017,7 +1017,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 34.0,
+      "rate": 33.9,
       "default": false
      }
     ]
@@ -1554,24 +1554,6 @@
    },
    {
     "rank": 32,
-    "id": "basculegionf",
-    "en": "Basculegion-F",
-    "name": "イダイトウ♀",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 33,
     "id": "swampert",
     "en": "Swampert",
     "name": "ラグラージ",
@@ -1582,6 +1564,24 @@
       "types": [
        "みず",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 33,
+    "id": "basculegionf",
+    "en": "Basculegion-F",
+    "name": "イダイトウ♀",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
