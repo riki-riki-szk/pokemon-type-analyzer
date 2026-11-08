@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 67.8,
+      "rate": 67.6,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 32.2,
+      "rate": 32.4,
       "default": false
      }
     ]
@@ -137,7 +137,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 61.8,
+      "rate": 62.0,
       "default": true
      },
      {
@@ -147,7 +147,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 38.2,
+      "rate": 38.0,
       "default": false
      }
     ]
@@ -372,7 +372,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 45.7,
+      "rate": 45.8,
       "default": false
      },
      {
@@ -382,7 +382,7 @@
        "みず",
        "あく"
       ],
-      "rate": 54.3,
+      "rate": 54.2,
       "default": true
      }
     ]
@@ -593,24 +593,6 @@
    },
    {
     "rank": 31,
-    "id": "samurotthisui",
-    "en": "Samurott-Hisui",
-    "name": "ヒスイダイケンキ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 32,
     "id": "kingambit",
     "en": "Kingambit",
     "name": "ドドゲザン",
@@ -621,6 +603,24 @@
       "types": [
        "あく",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 32,
+    "id": "samurotthisui",
+    "en": "Samurott-Hisui",
+    "name": "ヒスイダイケンキ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -700,24 +700,6 @@
    },
    {
     "rank": 37,
-    "id": "tyranitar",
-    "en": "Tyranitar",
-    "name": "バンギラス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 38,
     "id": "ninetalesalola",
     "en": "Ninetales-Alola",
     "name": "アローラキュウコン",
@@ -728,6 +710,24 @@
       "types": [
        "こおり",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 38,
+    "id": "tyranitar",
+    "en": "Tyranitar",
+    "name": "バンギラス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -1054,7 +1054,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 96.1,
+      "rate": 96.2,
       "default": true
      },
      {
@@ -1064,7 +1064,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 3.9,
+      "rate": 3.8,
       "default": false
      }
     ]
@@ -1189,7 +1189,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 6.1,
+      "rate": 6.3,
       "default": false
      },
      {
@@ -1199,7 +1199,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 93.9,
+      "rate": 93.7,
       "default": true
      }
     ]
@@ -1278,6 +1278,23 @@
    },
    {
     "rank": 17,
+    "id": "milotic",
+    "en": "Milotic",
+    "name": "ミロカロス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 18,
     "id": "sinistcha",
     "en": "Sinistcha",
     "name": "ヤバソチャ",
@@ -1288,23 +1305,6 @@
       "types": [
        "くさ",
        "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 18,
-    "id": "milotic",
-    "en": "Milotic",
-    "name": "ミロカロス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
       ],
       "rate": null,
       "default": true
@@ -1483,24 +1483,6 @@
    },
    {
     "rank": 28,
-    "id": "basculegionf",
-    "en": "Basculegion-F",
-    "name": "イダイトウ♀",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 29,
     "id": "froslass",
     "en": "Froslass",
     "name": "ユキメノコ",
@@ -1510,6 +1492,24 @@
       "label": null,
       "types": [
        "こおり",
+       "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 29,
+    "id": "basculegionf",
+    "en": "Basculegion-F",
+    "name": "イダイトウ♀",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
        "ゴースト"
       ],
       "rate": null,
@@ -1591,24 +1591,6 @@
    },
    {
     "rank": 34,
-    "id": "venusaur",
-    "en": "Venusaur",
-    "name": "フシギバナ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 35,
     "id": "volcarona",
     "en": "Volcarona",
     "name": "ウルガモス",
@@ -1619,6 +1601,24 @@
       "types": [
        "むし",
        "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 35,
+    "id": "venusaur",
+    "en": "Venusaur",
+    "name": "フシギバナ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
+       "どく"
       ],
       "rate": null,
       "default": true
@@ -1832,7 +1832,7 @@
       "types": [
        "あく"
       ],
-      "rate": 0.7,
+      "rate": 0.6,
       "default": false
      },
      {
@@ -1842,7 +1842,7 @@
        "あく",
        "ゴースト"
       ],
-      "rate": 99.3,
+      "rate": 99.4,
       "default": true
      }
     ]
