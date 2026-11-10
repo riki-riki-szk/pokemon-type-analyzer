@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "09/11/2026",
+ "dataDate": "10/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -137,7 +137,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 64.7,
+      "rate": 64.9,
       "default": true
      },
      {
@@ -147,7 +147,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 35.3,
+      "rate": 35.1,
       "default": false
      }
     ]
@@ -254,24 +254,6 @@
    },
    {
     "rank": 13,
-    "id": "corviknight",
-    "en": "Corviknight",
-    "name": "アーマーガア",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ひこう",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 14,
     "id": "meowscarada",
     "en": "Meowscarada",
     "name": "マスカーニャ",
@@ -282,6 +264,24 @@
       "types": [
        "くさ",
        "あく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 14,
+    "id": "corviknight",
+    "en": "Corviknight",
+    "name": "アーマーガア",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ひこう",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -390,7 +390,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 46.8,
+      "rate": 46.9,
       "default": false
      },
      {
@@ -400,7 +400,7 @@
        "みず",
        "あく"
       ],
-      "rate": 53.2,
+      "rate": 53.1,
       "default": true
      }
     ]
@@ -494,24 +494,6 @@
    },
    {
     "rank": 26,
-    "id": "pawmot",
-    "en": "Pawmot",
-    "name": "パーモット",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 27,
     "id": "rotomwash",
     "en": "Rotom-Wash",
     "name": "ウォッシュロトム",
@@ -522,6 +504,24 @@
       "types": [
        "でんき",
        "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 27,
+    "id": "pawmot",
+    "en": "Pawmot",
+    "name": "パーモット",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "かくとう"
       ],
       "rate": null,
       "default": true
@@ -665,7 +665,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 19.7,
+      "rate": 19.8,
       "default": false
      },
      {
@@ -675,7 +675,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 80.3,
+      "rate": 80.2,
       "default": true
      }
     ]
@@ -836,7 +836,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 11.2,
+      "rate": 11.3,
       "default": false
      },
      {
@@ -846,7 +846,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 88.8,
+      "rate": 88.7,
       "default": true
      }
     ]
@@ -992,7 +992,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 75.4,
+      "rate": 75.2,
       "default": true
      },
      {
@@ -1001,7 +1001,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 24.6,
+      "rate": 24.8,
       "default": false
      }
     ]
@@ -1376,6 +1376,23 @@
    },
    {
     "rank": 22,
+    "id": "sylveon",
+    "en": "Sylveon",
+    "name": "ニンフィア",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 23,
     "id": "armarouge",
     "en": "Armarouge",
     "name": "グレンアルマ",
@@ -1386,23 +1403,6 @@
       "types": [
        "ほのお",
        "エスパー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 23,
-    "id": "sylveon",
-    "en": "Sylveon",
-    "name": "ニンフィア",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1591,24 +1591,6 @@
    },
    {
     "rank": 34,
-    "id": "kommoo",
-    "en": "Kommo-o",
-    "name": "ジャラランガ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ドラゴン",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 35,
     "id": "glimmora",
     "en": "Glimmora",
     "name": "キラフロル",
@@ -1619,6 +1601,24 @@
       "types": [
        "いわ",
        "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 35,
+    "id": "kommoo",
+    "en": "Kommo-o",
+    "name": "ジャラランガ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ドラゴン",
+       "かくとう"
       ],
       "rate": null,
       "default": true
@@ -1733,24 +1733,6 @@
    },
    {
     "rank": 42,
-    "id": "aerodactyl",
-    "en": "Aerodactyl",
-    "name": "プテラ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "ひこう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 43,
     "id": "arcaninehisui",
     "en": "Arcanine-Hisui",
     "name": "ヒスイウインディ",
@@ -1761,6 +1743,24 @@
       "types": [
        "ほのお",
        "いわ"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 43,
+    "id": "aerodactyl",
+    "en": "Aerodactyl",
+    "name": "プテラ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "ひこう"
       ],
       "rate": null,
       "default": true
@@ -1804,24 +1804,6 @@
    },
    {
     "rank": 46,
-    "id": "drampa",
-    "en": "Drampa",
-    "name": "ジジーロン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ノーマル",
-       "ドラゴン"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 47,
     "id": "sableye",
     "en": "Sableye",
     "name": "ヤミラミ",
@@ -1832,6 +1814,24 @@
       "types": [
        "あく",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 47,
+    "id": "drampa",
+    "en": "Drampa",
+    "name": "ジジーロン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ノーマル",
+       "ドラゴン"
       ],
       "rate": null,
       "default": true
@@ -1850,7 +1850,7 @@
       "types": [
        "あく"
       ],
-      "rate": 0.8,
+      "rate": 0.9,
       "default": false
      },
      {
@@ -1860,7 +1860,7 @@
        "あく",
        "ゴースト"
       ],
-      "rate": 99.2,
+      "rate": 99.1,
       "default": true
      }
     ]
