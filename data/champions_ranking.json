@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 67.0,
+      "rate": 66.9,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 33.0,
+      "rate": 33.1,
       "default": false
      }
     ]
@@ -390,7 +390,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 48.2,
+      "rate": 48.3,
       "default": false
      },
      {
@@ -400,7 +400,7 @@
        "みず",
        "あく"
       ],
-      "rate": 51.8,
+      "rate": 51.7,
       "default": true
      }
     ]
@@ -836,7 +836,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 11.1,
+      "rate": 11.2,
       "default": false
      },
      {
@@ -846,7 +846,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 88.9,
+      "rate": 88.8,
       "default": true
      }
     ]
@@ -992,7 +992,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 74.7,
+      "rate": 74.5,
       "default": true
      },
      {
@@ -1001,7 +1001,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 25.3,
+      "rate": 25.5,
       "default": false
      }
     ]
@@ -1054,7 +1054,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 96.3,
+      "rate": 96.2,
       "default": true
      },
      {
@@ -1064,7 +1064,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 3.7,
+      "rate": 3.8,
       "default": false
      }
     ]
@@ -1342,7 +1342,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.0,
+      "rate": 1.1,
       "default": false
      },
      {
@@ -1352,7 +1352,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 99.0,
+      "rate": 98.9,
       "default": true
      }
     ]
@@ -1537,24 +1537,6 @@
    },
    {
     "rank": 31,
-    "id": "metagross",
-    "en": "Metagross",
-    "name": "メタグロス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "はがね",
-       "エスパー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 32,
     "id": "venusaur",
     "en": "Venusaur",
     "name": "フシギバナ",
@@ -1565,6 +1547,24 @@
       "types": [
        "くさ",
        "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 32,
+    "id": "metagross",
+    "en": "Metagross",
+    "name": "メタグロス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "はがね",
+       "エスパー"
       ],
       "rate": null,
       "default": true
