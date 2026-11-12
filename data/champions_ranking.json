@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "11/11/2026",
+ "dataDate": "12/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -137,7 +137,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 65.8,
+      "rate": 65.9,
       "default": true
      },
      {
@@ -147,7 +147,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 34.2,
+      "rate": 34.1,
       "default": false
      }
     ]
@@ -343,24 +343,6 @@
    },
    {
     "rank": 18,
-    "id": "glimmora",
-    "en": "Glimmora",
-    "name": "キラフロル",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 19,
     "id": "baxcalibur",
     "en": "Baxcalibur",
     "name": "セグレイブ",
@@ -371,6 +353,24 @@
       "types": [
        "ドラゴン",
        "こおり"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 19,
+    "id": "glimmora",
+    "en": "Glimmora",
+    "name": "キラフロル",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "どく"
       ],
       "rate": null,
       "default": true
@@ -390,7 +390,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 49.1,
+      "rate": 49.2,
       "default": false
      },
      {
@@ -400,7 +400,7 @@
        "みず",
        "あく"
       ],
-      "rate": 50.9,
+      "rate": 50.8,
       "default": true
      }
     ]
@@ -566,24 +566,6 @@
    },
    {
     "rank": 30,
-    "id": "pawmot",
-    "en": "Pawmot",
-    "name": "パーモット",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 31,
     "id": "swampert",
     "en": "Swampert",
     "name": "ラグラージ",
@@ -594,6 +576,24 @@
       "types": [
        "みず",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 31,
+    "id": "pawmot",
+    "en": "Pawmot",
+    "name": "パーモット",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "かくとう"
       ],
       "rate": null,
       "default": true
@@ -719,7 +719,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 20.8,
+      "rate": 20.9,
       "default": false
      },
      {
@@ -729,7 +729,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 79.2,
+      "rate": 79.1,
       "default": true
      }
     ]
@@ -836,7 +836,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 10.9,
+      "rate": 11.0,
       "default": false
      },
      {
@@ -846,7 +846,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 89.1,
+      "rate": 89.0,
       "default": true
      }
     ]
@@ -907,6 +907,24 @@
    },
    {
     "rank": 48,
+    "id": "ceruledge",
+    "en": "Ceruledge",
+    "name": "ソウブレイズ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお",
+       "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 49,
     "id": "pelipper",
     "en": "Pelipper",
     "name": "ペリッパー",
@@ -924,7 +942,7 @@
     ]
    },
    {
-    "rank": 49,
+    "rank": 50,
     "id": "scovillain",
     "en": "Scovillain",
     "name": "スコヴィラン",
@@ -935,24 +953,6 @@
       "types": [
        "くさ",
        "ほのお"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 50,
-    "id": "ceruledge",
-    "en": "Ceruledge",
-    "name": "ソウブレイズ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお",
-       "ゴースト"
       ],
       "rate": null,
       "default": true
@@ -992,7 +992,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 74.0,
+      "rate": 73.9,
       "default": true
      },
      {
@@ -1001,7 +1001,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 26.0,
+      "rate": 26.1,
       "default": false
      }
     ]
@@ -1207,7 +1207,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 7.0,
+      "rate": 6.9,
       "default": false
      },
      {
@@ -1217,7 +1217,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 93.0,
+      "rate": 93.1,
       "default": true
      }
     ]
