@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "13/11/2026",
+ "dataDate": "14/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -165,7 +165,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 67.2,
+      "rate": 67.6,
       "default": true
      },
      {
@@ -175,7 +175,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 32.8,
+      "rate": 32.4,
       "default": false
      }
     ]
@@ -477,24 +477,6 @@
    },
    {
     "rank": 25,
-    "id": "rotomheat",
-    "en": "Rotom-Heat",
-    "name": "ヒートロトム",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "ほのお"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 26,
     "id": "rotomwash",
     "en": "Rotom-Wash",
     "name": "ウォッシュロトム",
@@ -505,6 +487,24 @@
       "types": [
        "でんき",
        "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 26,
+    "id": "rotomheat",
+    "en": "Rotom-Heat",
+    "name": "ヒートロトム",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "ほのお"
       ],
       "rate": null,
       "default": true
@@ -584,23 +584,6 @@
    },
    {
     "rank": 31,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 32,
     "id": "tyranitar",
     "en": "Tyranitar",
     "name": "バンギラス",
@@ -618,7 +601,7 @@
     ]
    },
    {
-    "rank": 33,
+    "rank": 32,
     "id": "pawmot",
     "en": "Pawmot",
     "name": "パーモット",
@@ -629,6 +612,23 @@
       "types": [
        "でんき",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 33,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -719,7 +719,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 21.6,
+      "rate": 21.7,
       "default": false
      },
      {
@@ -729,31 +729,13 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 78.4,
+      "rate": 78.3,
       "default": true
      }
     ]
    },
    {
     "rank": 39,
-    "id": "samurotthisui",
-    "en": "Samurott-Hisui",
-    "name": "ヒスイダイケンキ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 40,
     "id": "hydreigon",
     "en": "Hydreigon",
     "name": "サザンドラ",
@@ -764,6 +746,24 @@
       "types": [
        "あく",
        "ドラゴン"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 40,
+    "id": "samurotthisui",
+    "en": "Samurott-Hisui",
+    "name": "ヒスイダイケンキ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -808,23 +808,6 @@
    },
    {
     "rank": 43,
-    "id": "blastoise",
-    "en": "Blastoise",
-    "name": "カメックス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 44,
     "id": "staraptor",
     "en": "Staraptor",
     "name": "ムクホーク",
@@ -836,7 +819,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 10.7,
+      "rate": 10.6,
       "default": false
      },
      {
@@ -846,7 +829,24 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 89.3,
+      "rate": 89.4,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 44,
+    "id": "blastoise",
+    "en": "Blastoise",
+    "name": "カメックス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
+      ],
+      "rate": null,
       "default": true
      }
     ]
@@ -981,33 +981,6 @@
    },
    {
     "rank": 2,
-    "id": "garchomp",
-    "en": "Garchomp",
-    "name": "ガブリアス",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "ドラゴン",
-       "じめん"
-      ],
-      "rate": 73.3,
-      "default": true
-     },
-     {
-      "key": "megaz",
-      "label": "メガZ",
-      "types": [
-       "ドラゴン"
-      ],
-      "rate": 26.7,
-      "default": false
-     }
-    ]
-   },
-   {
-    "rank": 3,
     "id": "rillaboom",
     "en": "Rillaboom",
     "name": "ゴリランダー",
@@ -1020,6 +993,33 @@
       ],
       "rate": null,
       "default": true
+     }
+    ]
+   },
+   {
+    "rank": 3,
+    "id": "garchomp",
+    "en": "Garchomp",
+    "name": "ガブリアス",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "ドラゴン",
+       "じめん"
+      ],
+      "rate": 73.2,
+      "default": true
+     },
+     {
+      "key": "megaz",
+      "label": "メガZ",
+      "types": [
+       "ドラゴン"
+      ],
+      "rate": 26.8,
+      "default": false
      }
     ]
    },
@@ -1072,7 +1072,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.9,
+      "rate": 95.8,
       "default": true
      },
      {
@@ -1082,7 +1082,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.1,
+      "rate": 4.2,
       "default": false
      }
     ]
@@ -1306,7 +1306,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.5,
+      "rate": 1.6,
       "default": false
      },
      {
@@ -1316,7 +1316,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 98.5,
+      "rate": 98.4,
       "default": true
      }
     ]
@@ -1769,24 +1769,6 @@
    },
    {
     "rank": 44,
-    "id": "aerodactyl",
-    "en": "Aerodactyl",
-    "name": "プテラ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "ひこう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 45,
     "id": "camerupt",
     "en": "Camerupt",
     "name": "バクーダ",
@@ -1797,6 +1779,24 @@
       "types": [
        "ほのお",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 45,
+    "id": "aerodactyl",
+    "en": "Aerodactyl",
+    "name": "プテラ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "ひこう"
       ],
       "rate": null,
       "default": true
