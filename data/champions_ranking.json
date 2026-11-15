@@ -390,7 +390,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 49.6,
+      "rate": 49.5,
       "default": false
      },
      {
@@ -400,7 +400,7 @@
        "みず",
        "あく"
       ],
-      "rate": 50.4,
+      "rate": 50.5,
       "default": true
      }
     ]
@@ -1393,24 +1393,6 @@
    },
    {
     "rank": 23,
-    "id": "excadrill",
-    "en": "Excadrill",
-    "name": "ドリュウズ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "じめん",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 24,
     "id": "gardevoir",
     "en": "Gardevoir",
     "name": "サーナイト",
@@ -1421,6 +1403,24 @@
       "types": [
        "エスパー",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 24,
+    "id": "excadrill",
+    "en": "Excadrill",
+    "name": "ドリュウズ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "じめん",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -1608,24 +1608,6 @@
    },
    {
     "rank": 35,
-    "id": "glimmora",
-    "en": "Glimmora",
-    "name": "キラフロル",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 36,
     "id": "grimmsnarl",
     "en": "Grimmsnarl",
     "name": "オーロンゲ",
@@ -1636,6 +1618,24 @@
       "types": [
        "あく",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 36,
+    "id": "glimmora",
+    "en": "Glimmora",
+    "name": "キラフロル",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "どく"
       ],
       "rate": null,
       "default": true
