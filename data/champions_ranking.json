@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "15/11/2026",
+ "dataDate": "16/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -165,7 +165,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 68.1,
+      "rate": 68.2,
       "default": true
      },
      {
@@ -175,7 +175,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 31.9,
+      "rate": 31.8,
       "default": false
      }
     ]
@@ -390,7 +390,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 49.2,
+      "rate": 49.1,
       "default": false
      },
      {
@@ -400,7 +400,7 @@
        "みず",
        "あく"
       ],
-      "rate": 50.8,
+      "rate": 50.9,
       "default": true
      }
     ]
@@ -1295,6 +1295,24 @@
    },
    {
     "rank": 18,
+    "id": "salamence",
+    "en": "Salamence",
+    "name": "ボーマンダ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ドラゴン",
+       "ひこう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 19,
     "id": "golisopod",
     "en": "Golisopod",
     "name": "グソクムシャ",
@@ -1317,24 +1335,6 @@
        "はがね"
       ],
       "rate": 98.2,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 19,
-    "id": "salamence",
-    "en": "Salamence",
-    "name": "ボーマンダ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ドラゴン",
-       "ひこう"
-      ],
-      "rate": null,
       "default": true
      }
     ]
@@ -1626,24 +1626,6 @@
    },
    {
     "rank": 36,
-    "id": "basculegionf",
-    "en": "Basculegion-F",
-    "name": "イダイトウ♀",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 37,
     "id": "glimmora",
     "en": "Glimmora",
     "name": "キラフロル",
@@ -1654,6 +1636,24 @@
       "types": [
        "いわ",
        "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 37,
+    "id": "basculegionf",
+    "en": "Basculegion-F",
+    "name": "イダイトウ♀",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
@@ -1698,6 +1698,23 @@
    },
    {
     "rank": 40,
+    "id": "politoed",
+    "en": "Politoed",
+    "name": "ニョロトノ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 41,
     "id": "kommoo",
     "en": "Kommo-o",
     "name": "ジャラランガ",
@@ -1708,23 +1725,6 @@
       "types": [
        "ドラゴン",
        "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 41,
-    "id": "politoed",
-    "en": "Politoed",
-    "name": "ニョロトノ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
       ],
       "rate": null,
       "default": true
@@ -1885,16 +1885,16 @@
    },
    {
     "rank": 50,
-    "id": "blaziken",
-    "en": "Blaziken",
-    "name": "バシャーモ",
+    "id": "ninetalesalola",
+    "en": "Ninetales-Alola",
+    "name": "アローラキュウコン",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "ほのお",
-       "かくとう"
+       "こおり",
+       "フェアリー"
       ],
       "rate": null,
       "default": true
