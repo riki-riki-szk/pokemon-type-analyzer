@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 67.3,
+      "rate": 67.4,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 32.7,
+      "rate": 32.6,
       "default": false
      }
     ]
@@ -165,7 +165,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 69.1,
+      "rate": 69.5,
       "default": true
      },
      {
@@ -175,7 +175,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 30.9,
+      "rate": 30.5,
       "default": false
      }
     ]
@@ -372,7 +372,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 48.9,
+      "rate": 49.0,
       "default": false
      },
      {
@@ -382,7 +382,7 @@
        "みず",
        "あく"
       ],
-      "rate": 51.1,
+      "rate": 51.0,
       "default": true
      }
     ]
@@ -442,15 +442,14 @@
    },
    {
     "rank": 23,
-    "id": "greninja",
-    "en": "Greninja",
-    "name": "ゲッコウガ",
+    "id": "umbreon",
+    "en": "Umbreon",
+    "name": "ブラッキー",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "みず",
        "あく"
       ],
       "rate": null,
@@ -460,14 +459,15 @@
    },
    {
     "rank": 24,
-    "id": "umbreon",
-    "en": "Umbreon",
-    "name": "ブラッキー",
+    "id": "greninja",
+    "en": "Greninja",
+    "name": "ゲッコウガ",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
+       "みず",
        "あく"
       ],
       "rate": null,
@@ -513,24 +513,6 @@
    },
    {
     "rank": 27,
-    "id": "kingambit",
-    "en": "Kingambit",
-    "name": "ドドゲザン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "あく",
-       "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 28,
     "id": "blaziken",
     "en": "Blaziken",
     "name": "バシャーモ",
@@ -541,6 +523,24 @@
       "types": [
        "ほのお",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 28,
+    "id": "kingambit",
+    "en": "Kingambit",
+    "name": "ドドゲザン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "あく",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -584,24 +584,6 @@
    },
    {
     "rank": 31,
-    "id": "swampert",
-    "en": "Swampert",
-    "name": "ラグラージ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "じめん"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 32,
     "id": "volcarona",
     "en": "Volcarona",
     "name": "ウルガモス",
@@ -612,6 +594,24 @@
       "types": [
        "むし",
        "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 32,
+    "id": "swampert",
+    "en": "Swampert",
+    "name": "ラグラージ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "じめん"
       ],
       "rate": null,
       "default": true
@@ -709,33 +709,6 @@
    },
    {
     "rank": 38,
-    "id": "clefable",
-    "en": "Clefable",
-    "name": "ピクシー",
-    "forms": [
-     {
-      "key": "base",
-      "label": "通常",
-      "types": [
-       "フェアリー"
-      ],
-      "rate": 21.8,
-      "default": false
-     },
-     {
-      "key": "mega",
-      "label": "メガ",
-      "types": [
-       "フェアリー",
-       "ひこう"
-      ],
-      "rate": 78.2,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 39,
     "id": "hydreigon",
     "en": "Hydreigon",
     "name": "サザンドラ",
@@ -748,6 +721,33 @@
        "ドラゴン"
       ],
       "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 39,
+    "id": "clefable",
+    "en": "Clefable",
+    "name": "ピクシー",
+    "forms": [
+     {
+      "key": "base",
+      "label": "通常",
+      "types": [
+       "フェアリー"
+      ],
+      "rate": 22.0,
+      "default": false
+     },
+     {
+      "key": "mega",
+      "label": "メガ",
+      "types": [
+       "フェアリー",
+       "ひこう"
+      ],
+      "rate": 78.0,
       "default": true
      }
     ]
@@ -772,24 +772,6 @@
    },
    {
     "rank": 41,
-    "id": "samurotthisui",
-    "en": "Samurott-Hisui",
-    "name": "ヒスイダイケンキ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 42,
     "id": "slowkinggalar",
     "en": "Slowking-Galar",
     "name": "ガラルヤドキング",
@@ -800,6 +782,24 @@
       "types": [
        "どく",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 42,
+    "id": "samurotthisui",
+    "en": "Samurott-Hisui",
+    "name": "ヒスイダイケンキ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -819,7 +819,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 10.6,
+      "rate": 10.5,
       "default": false
      },
      {
@@ -829,7 +829,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 89.4,
+      "rate": 89.5,
       "default": true
      }
     ]
@@ -1207,7 +1207,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 6.6,
+      "rate": 6.5,
       "default": false
      },
      {
@@ -1217,7 +1217,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 93.4,
+      "rate": 93.5,
       "default": true
      }
     ]
@@ -1394,6 +1394,23 @@
    },
    {
     "rank": 23,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 24,
     "id": "excadrill",
     "en": "Excadrill",
     "name": "ドリュウズ",
@@ -1404,23 +1421,6 @@
       "types": [
        "じめん",
        "はがね"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 24,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1608,24 +1608,6 @@
    },
    {
     "rank": 35,
-    "id": "grimmsnarl",
-    "en": "Grimmsnarl",
-    "name": "オーロンゲ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "あく",
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 36,
     "id": "gengar",
     "en": "Gengar",
     "name": "ゲンガー",
@@ -1636,6 +1618,24 @@
       "types": [
        "ゴースト",
        "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 36,
+    "id": "grimmsnarl",
+    "en": "Grimmsnarl",
+    "name": "オーロンゲ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "あく",
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1733,24 +1733,6 @@
    },
    {
     "rank": 42,
-    "id": "kommoo",
-    "en": "Kommo-o",
-    "name": "ジャラランガ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ドラゴン",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 43,
     "id": "arcaninehisui",
     "en": "Arcanine-Hisui",
     "name": "ヒスイウインディ",
@@ -1768,7 +1750,7 @@
     ]
    },
    {
-    "rank": 44,
+    "rank": 43,
     "id": "sableye",
     "en": "Sableye",
     "name": "ヤミラミ",
@@ -1779,6 +1761,24 @@
       "types": [
        "あく",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 44,
+    "id": "kommoo",
+    "en": "Kommo-o",
+    "name": "ジャラランガ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ドラゴン",
+       "かくとう"
       ],
       "rate": null,
       "default": true
