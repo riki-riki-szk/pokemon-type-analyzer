@@ -72,24 +72,6 @@
    },
    {
     "rank": 4,
-    "id": "archaludon",
-    "en": "Archaludon",
-    "name": "ブリジュラス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "はがね",
-       "ドラゴン"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 5,
     "id": "mimikyu",
     "en": "Mimikyu",
     "name": "ミミッキュ",
@@ -100,6 +82,24 @@
       "types": [
        "ゴースト",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 5,
+    "id": "archaludon",
+    "en": "Archaludon",
+    "name": "ブリジュラス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "はがね",
+       "ドラゴン"
       ],
       "rate": null,
       "default": true
@@ -165,7 +165,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 69.5,
+      "rate": 69.7,
       "default": true
      },
      {
@@ -175,7 +175,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 30.5,
+      "rate": 30.3,
       "default": false
      }
     ]
@@ -290,23 +290,6 @@
    },
    {
     "rank": 15,
-    "id": "rillaboom",
-    "en": "Rillaboom",
-    "name": "ゴリランダー",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 16,
     "id": "baxcalibur",
     "en": "Baxcalibur",
     "name": "セグレイブ",
@@ -317,6 +300,23 @@
       "types": [
        "ドラゴン",
        "こおり"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 16,
+    "id": "rillaboom",
+    "en": "Rillaboom",
+    "name": "ゴリランダー",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ"
       ],
       "rate": null,
       "default": true
@@ -424,6 +424,23 @@
    },
    {
     "rank": 22,
+    "id": "umbreon",
+    "en": "Umbreon",
+    "name": "ブラッキー",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "あく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 23,
     "id": "rotomwash",
     "en": "Rotom-Wash",
     "name": "ウォッシュロトム",
@@ -434,23 +451,6 @@
       "types": [
        "でんき",
        "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 23,
-    "id": "umbreon",
-    "en": "Umbreon",
-    "name": "ブラッキー",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "あく"
       ],
       "rate": null,
       "default": true
@@ -692,23 +692,6 @@
    },
    {
     "rank": 37,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 38,
     "id": "hydreigon",
     "en": "Hydreigon",
     "name": "サザンドラ",
@@ -719,6 +702,23 @@
       "types": [
        "あく",
        "ドラゴン"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 38,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -737,7 +737,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 22.0,
+      "rate": 22.1,
       "default": false
      },
      {
@@ -747,7 +747,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 78.0,
+      "rate": 77.9,
       "default": true
      }
     ]
@@ -819,7 +819,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 10.5,
+      "rate": 10.4,
       "default": false
      },
      {
@@ -829,7 +829,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 89.5,
+      "rate": 89.6,
       "default": true
      }
     ]
@@ -854,23 +854,6 @@
    },
    {
     "rank": 45,
-    "id": "blastoise",
-    "en": "Blastoise",
-    "name": "カメックス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 46,
     "id": "starmie",
     "en": "Starmie",
     "name": "スターミー",
@@ -881,6 +864,23 @@
       "types": [
        "みず",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 46,
+    "id": "blastoise",
+    "en": "Blastoise",
+    "name": "カメックス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
       ],
       "rate": null,
       "default": true
@@ -1009,7 +1009,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 73.1,
+      "rate": 73.2,
       "default": true
      },
      {
@@ -1018,7 +1018,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 26.9,
+      "rate": 26.8,
       "default": false
      }
     ]
@@ -1072,7 +1072,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.6,
+      "rate": 95.5,
       "default": true
      },
      {
@@ -1082,7 +1082,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.4,
+      "rate": 4.5,
       "default": false
      }
     ]
@@ -1591,23 +1591,6 @@
    },
    {
     "rank": 34,
-    "id": "torkoal",
-    "en": "Torkoal",
-    "name": "コータス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 35,
     "id": "gengar",
     "en": "Gengar",
     "name": "ゲンガー",
@@ -1618,6 +1601,23 @@
       "types": [
        "ゴースト",
        "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 35,
+    "id": "torkoal",
+    "en": "Torkoal",
+    "name": "コータス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお"
       ],
       "rate": null,
       "default": true
@@ -1840,24 +1840,6 @@
    },
    {
     "rank": 48,
-    "id": "drampa",
-    "en": "Drampa",
-    "name": "ジジーロン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ノーマル",
-       "ドラゴン"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 49,
     "id": "blaziken",
     "en": "Blaziken",
     "name": "バシャーモ",
@@ -1868,6 +1850,24 @@
       "types": [
        "ほのお",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 49,
+    "id": "drampa",
+    "en": "Drampa",
+    "name": "ジジーロン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ノーマル",
+       "ドラゴン"
       ],
       "rate": null,
       "default": true
