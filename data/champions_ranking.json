@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "19/11/2026",
+ "dataDate": "20/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 67.4,
+      "rate": 67.5,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 32.6,
+      "rate": 32.5,
       "default": false
      }
     ]
@@ -165,7 +165,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 69.7,
+      "rate": 70.0,
       "default": true
      },
      {
@@ -175,7 +175,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 30.3,
+      "rate": 30.0,
       "default": false
      }
     ]
@@ -372,7 +372,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 49.0,
+      "rate": 48.8,
       "default": false
      },
      {
@@ -382,7 +382,7 @@
        "みず",
        "あく"
       ],
-      "rate": 51.0,
+      "rate": 51.2,
       "default": true
      }
     ]
@@ -495,24 +495,6 @@
    },
    {
     "rank": 26,
-    "id": "rotomheat",
-    "en": "Rotom-Heat",
-    "name": "ヒートロトム",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "ほのお"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 27,
     "id": "blaziken",
     "en": "Blaziken",
     "name": "バシャーモ",
@@ -523,6 +505,24 @@
       "types": [
        "ほのお",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 27,
+    "id": "rotomheat",
+    "en": "Rotom-Heat",
+    "name": "ヒートロトム",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "ほのお"
       ],
       "rate": null,
       "default": true
@@ -737,7 +737,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 22.1,
+      "rate": 22.2,
       "default": false
      },
      {
@@ -747,7 +747,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 77.9,
+      "rate": 77.8,
       "default": true
      }
     ]
@@ -790,24 +790,6 @@
    },
    {
     "rank": 42,
-    "id": "samurotthisui",
-    "en": "Samurott-Hisui",
-    "name": "ヒスイダイケンキ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 43,
     "id": "staraptor",
     "en": "Staraptor",
     "name": "ムクホーク",
@@ -835,17 +817,17 @@
     ]
    },
    {
-    "rank": 44,
-    "id": "scizor",
-    "en": "Scizor",
-    "name": "ハッサム",
+    "rank": 43,
+    "id": "samurotthisui",
+    "en": "Samurott-Hisui",
+    "name": "ヒスイダイケンキ",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
-       "むし",
-       "はがね"
+       "みず",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -853,7 +835,7 @@
     ]
    },
    {
-    "rank": 45,
+    "rank": 44,
     "id": "starmie",
     "en": "Starmie",
     "name": "スターミー",
@@ -864,6 +846,24 @@
       "types": [
        "みず",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 45,
+    "id": "scizor",
+    "en": "Scizor",
+    "name": "ハッサム",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "むし",
+       "はがね"
       ],
       "rate": null,
       "default": true
@@ -907,24 +907,6 @@
    },
    {
     "rank": 48,
-    "id": "delphox",
-    "en": "Delphox",
-    "name": "マフォクシー",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお",
-       "エスパー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 49,
     "id": "ceruledge",
     "en": "Ceruledge",
     "name": "ソウブレイズ",
@@ -935,6 +917,24 @@
       "types": [
        "ほのお",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 49,
+    "id": "delphox",
+    "en": "Delphox",
+    "name": "マフォクシー",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお",
+       "エスパー"
       ],
       "rate": null,
       "default": true
@@ -1009,7 +1009,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 73.2,
+      "rate": 73.3,
       "default": true
      },
      {
@@ -1018,7 +1018,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 26.8,
+      "rate": 26.7,
       "default": false
      }
     ]
@@ -1609,23 +1609,6 @@
    },
    {
     "rank": 35,
-    "id": "torkoal",
-    "en": "Torkoal",
-    "name": "コータス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 36,
     "id": "grimmsnarl",
     "en": "Grimmsnarl",
     "name": "オーロンゲ",
@@ -1636,6 +1619,23 @@
       "types": [
        "あく",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 36,
+    "id": "torkoal",
+    "en": "Torkoal",
+    "name": "コータス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお"
       ],
       "rate": null,
       "default": true
@@ -1733,24 +1733,6 @@
    },
    {
     "rank": 42,
-    "id": "arcaninehisui",
-    "en": "Arcanine-Hisui",
-    "name": "ヒスイウインディ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお",
-       "いわ"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 43,
     "id": "sableye",
     "en": "Sableye",
     "name": "ヤミラミ",
@@ -1761,6 +1743,24 @@
       "types": [
        "あく",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 43,
+    "id": "arcaninehisui",
+    "en": "Arcanine-Hisui",
+    "name": "ヒスイウインディ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお",
+       "いわ"
       ],
       "rate": null,
       "default": true
@@ -1858,24 +1858,6 @@
    },
    {
     "rank": 49,
-    "id": "drampa",
-    "en": "Drampa",
-    "name": "ジジーロン",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ノーマル",
-       "ドラゴン"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 50,
     "id": "ninetalesalola",
     "en": "Ninetales-Alola",
     "name": "アローラキュウコン",
@@ -1886,6 +1868,24 @@
       "types": [
        "こおり",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 50,
+    "id": "drampa",
+    "en": "Drampa",
+    "name": "ジジーロン",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ノーマル",
+       "ドラゴン"
       ],
       "rate": null,
       "default": true
