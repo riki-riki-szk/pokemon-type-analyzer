@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "20/11/2026",
+ "dataDate": "21/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -137,7 +137,7 @@
        "むし",
        "みず"
       ],
-      "rate": 1.9,
+      "rate": 2.0,
       "default": false
      },
      {
@@ -147,7 +147,7 @@
        "むし",
        "はがね"
       ],
-      "rate": 98.1,
+      "rate": 98.0,
       "default": true
      }
     ]
@@ -165,7 +165,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 70.0,
+      "rate": 70.2,
       "default": true
      },
      {
@@ -175,7 +175,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 30.0,
+      "rate": 29.8,
       "default": false
      }
     ]
@@ -372,7 +372,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 48.8,
+      "rate": 48.6,
       "default": false
      },
      {
@@ -382,7 +382,7 @@
        "みず",
        "あく"
       ],
-      "rate": 51.2,
+      "rate": 51.4,
       "default": true
      }
     ]
@@ -477,24 +477,6 @@
    },
    {
     "rank": 25,
-    "id": "gengar",
-    "en": "Gengar",
-    "name": "ゲンガー",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ゴースト",
-       "どく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 26,
     "id": "blaziken",
     "en": "Blaziken",
     "name": "バシャーモ",
@@ -505,6 +487,24 @@
       "types": [
        "ほのお",
        "かくとう"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 26,
+    "id": "gengar",
+    "en": "Gengar",
+    "name": "ゲンガー",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ゴースト",
+       "どく"
       ],
       "rate": null,
       "default": true
@@ -584,24 +584,6 @@
    },
    {
     "rank": 31,
-    "id": "tyranitar",
-    "en": "Tyranitar",
-    "name": "バンギラス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 32,
     "id": "swampert",
     "en": "Swampert",
     "name": "ラグラージ",
@@ -612,6 +594,24 @@
       "types": [
        "みず",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 32,
+    "id": "tyranitar",
+    "en": "Tyranitar",
+    "name": "バンギラス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -638,24 +638,6 @@
    },
    {
     "rank": 34,
-    "id": "pawmot",
-    "en": "Pawmot",
-    "name": "パーモット",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "でんき",
-       "かくとう"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 35,
     "id": "aegislash",
     "en": "Aegislash",
     "name": "ギルガルド",
@@ -673,7 +655,7 @@
     ]
    },
    {
-    "rank": 36,
+    "rank": 35,
     "id": "ninetalesalola",
     "en": "Ninetales-Alola",
     "name": "アローラキュウコン",
@@ -684,6 +666,24 @@
       "types": [
        "こおり",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 36,
+    "id": "pawmot",
+    "en": "Pawmot",
+    "name": "パーモット",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "でんき",
+       "かくとう"
       ],
       "rate": null,
       "default": true
@@ -872,23 +872,6 @@
    },
    {
     "rank": 46,
-    "id": "blastoise",
-    "en": "Blastoise",
-    "name": "カメックス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 47,
     "id": "skeledirge",
     "en": "Skeledirge",
     "name": "ラウドボーン",
@@ -899,6 +882,23 @@
       "types": [
        "ほのお",
        "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 47,
+    "id": "blastoise",
+    "en": "Blastoise",
+    "name": "カメックス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
       ],
       "rate": null,
       "default": true
@@ -943,16 +943,16 @@
    },
    {
     "rank": 50,
-    "id": "scovillain",
-    "en": "Scovillain",
-    "name": "スコヴィラン",
+    "id": "venusaur",
+    "en": "Venusaur",
+    "name": "フシギバナ",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
        "くさ",
-       "ほのお"
+       "どく"
       ],
       "rate": null,
       "default": true
@@ -1313,6 +1313,24 @@
    },
    {
     "rank": 19,
+    "id": "sinistcha",
+    "en": "Sinistcha",
+    "name": "ヤバソチャ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ",
+       "ゴースト"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 20,
     "id": "golisopod",
     "en": "Golisopod",
     "name": "グソクムシャ",
@@ -1335,24 +1353,6 @@
        "はがね"
       ],
       "rate": 97.8,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 20,
-    "id": "sinistcha",
-    "en": "Sinistcha",
-    "name": "ヤバソチャ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ",
-       "ゴースト"
-      ],
-      "rate": null,
       "default": true
      }
     ]
@@ -1698,23 +1698,6 @@
    },
    {
     "rank": 40,
-    "id": "politoed",
-    "en": "Politoed",
-    "name": "ニョロトノ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 41,
     "id": "camerupt",
     "en": "Camerupt",
     "name": "バクーダ",
@@ -1725,6 +1708,23 @@
       "types": [
        "ほのお",
        "じめん"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 41,
+    "id": "politoed",
+    "en": "Politoed",
+    "name": "ニョロトノ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず"
       ],
       "rate": null,
       "default": true
