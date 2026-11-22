@@ -165,7 +165,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 70.2,
+      "rate": 70.3,
       "default": true
      },
      {
@@ -175,7 +175,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 29.8,
+      "rate": 29.7,
       "default": false
      }
     ]
@@ -372,7 +372,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 48.5,
+      "rate": 48.6,
       "default": false
      },
      {
@@ -382,7 +382,7 @@
        "みず",
        "あく"
       ],
-      "rate": 51.5,
+      "rate": 51.4,
       "default": true
      }
     ]
@@ -710,6 +710,24 @@
    },
    {
     "rank": 38,
+    "id": "toxapex",
+    "en": "Toxapex",
+    "name": "ドヒドイデ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "どく",
+       "みず"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 39,
     "id": "clefable",
     "en": "Clefable",
     "name": "ピクシー",
@@ -731,24 +749,6 @@
        "ひこう"
       ],
       "rate": 77.8,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 39,
-    "id": "toxapex",
-    "en": "Toxapex",
-    "name": "ドヒドイデ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "どく",
-       "みず"
-      ],
-      "rate": null,
       "default": true
      }
     ]
@@ -1447,24 +1447,6 @@
    },
    {
     "rank": 26,
-    "id": "primarina",
-    "en": "Primarina",
-    "name": "アシレーヌ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 27,
     "id": "volcarona",
     "en": "Volcarona",
     "name": "ウルガモス",
@@ -1475,6 +1457,24 @@
       "types": [
        "むし",
        "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 27,
+    "id": "primarina",
+    "en": "Primarina",
+    "name": "アシレーヌ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "フェアリー"
       ],
       "rate": null,
       "default": true
@@ -1609,6 +1609,23 @@
    },
    {
     "rank": 35,
+    "id": "torkoal",
+    "en": "Torkoal",
+    "name": "コータス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "ほのお"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 36,
     "id": "grimmsnarl",
     "en": "Grimmsnarl",
     "name": "オーロンゲ",
@@ -1619,23 +1636,6 @@
       "types": [
        "あく",
        "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 36,
-    "id": "torkoal",
-    "en": "Torkoal",
-    "name": "コータス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "ほのお"
       ],
       "rate": null,
       "default": true
