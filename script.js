@@ -917,6 +917,84 @@ window.addEventListener("resize",()=>{
 
 
 // ----------------------------
+// マトリクスの行・列ハイライト
+// (カーソル位置から縦軸・横軸までをL字に強調する)
+// ----------------------------
+
+let axisHighlighted = [];
+
+function clearAxisHighlight(){
+
+    axisHighlighted.forEach(cell=>{
+
+        cell.classList.remove("axis-highlight");
+        cell.classList.remove("axis-highlight-header");
+
+    });
+
+    axisHighlighted = [];
+
+}
+
+function highlightAxis(cell){
+
+    clearAxisHighlight();
+
+    const tr = cell.parentElement;
+
+    if(!tr) return;
+
+    const rowIndex = tr.rowIndex;
+    const colIndex = cell.cellIndex;
+
+    const mark = (target, isHeader)=>{
+
+        if(!target) return;
+
+        target.classList.add(
+            isHeader ? "axis-highlight-header" : "axis-highlight"
+        );
+
+        axisHighlighted.push(target);
+
+    };
+
+    // 左のタイプ名(縦軸)まで
+    for(let col=0; col<=colIndex; col++){
+
+        mark(tr.cells[col], col === 0);
+
+    }
+
+    // 上のタイプ名(横軸)まで
+    for(let row=0; row<=rowIndex; row++){
+
+        mark(matrixTable.rows[row].cells[colIndex], row === 0);
+
+    }
+
+}
+
+matrixTable.addEventListener("mouseover",event=>{
+
+    const cell = event.target.closest("td");
+
+    if(cell && matrixTable.contains(cell)){
+
+        highlightAxis(cell);
+
+    }else{
+
+        clearAxisHighlight();
+
+    }
+
+});
+
+matrixTable.addEventListener("mouseleave", clearAxisHighlight);
+
+
+// ----------------------------
 // リフレッシュを上書き
 // ----------------------------
 
