@@ -149,6 +149,7 @@
 
     }
 
+
     async function loadTypings(){
 
         try{
@@ -179,6 +180,9 @@
 
             // 候補が変わるので探索結果のキャッシュを捨てる
             solver = null;
+            coreSolutions = [];
+            coreIndex = 0;
+            lastSearch = null;
 
             if(mode === "defense") renderDefense();
 
@@ -227,6 +231,12 @@
 
         const index =
             party.findIndex(member=>member.key === combo.key);
+
+        lastSearch = null;
+        coreSolutions = [];
+        coreIndex = 0;
+
+        if(alternativeButton) alternativeButton.disabled = true;
 
         if(index >= 0){
 
@@ -389,8 +399,8 @@
         if(covered){
 
             lines.push(
-                "※18タイプ全てを半減以下で受けられる状態になったため、マトリクス表の数字は" +
-                "「そのタイプ自身が半減以下にできるタイプの数」に切り替わっています。"
+                "※18タイプ全てを半減以下で受けられています。" +
+                "埋めるべき穴が残っていないため、マトリクス表には何も表示していません。"
             );
 
         }else{
@@ -599,14 +609,7 @@
 
         const uncovered = uncoveredMask();
 
-        // 穴が無くなったら「埋められる穴の数」は全て0になってしまうので、
-        // そのタイプ自体が半減以下にできるタイプ数を表示に切り替える
-        const showTotal = uncovered === 0;
-
-        const gainOf = combo=>
-            showTotal
-                ? popcount(combo.resist)
-                : popcount(combo.resist & uncovered);
+        const gainOf = combo=>popcount(combo.resist & uncovered);
 
         // 最大値を基準に4段階へ正規化する
         let maxGain = 0;
@@ -701,10 +704,7 @@
             td.classList.toggle("defense-unreal", !isReal(combo));
 
             let title =
-                combo.key +
-                (showTotal
-                    ? " — 半減以下にできるタイプ " + gain + "種"
-                    : " — 加えると新たに受けられるタイプ " + gain + "種");
+                combo.key + " — 加えると新たに受けられるタイプ " + gain + "種";
 
             if(examples){
 
@@ -736,6 +736,13 @@
     // 「N体での最大」「18タイプ全ての最少体数」の両方に答えられる。
 
     let solver = null;
+
+    // 直前に実行した探索(「別の構成」で繰り返すため)
+    let lastSearch = null;
+
+    // 同点の最適解を全て列挙したもの(「別の構成」で順に見せる)
+    let coreSolutions = [];
+    let coreIndex = 0;
 
     function buildSolver(){
 
@@ -930,7 +937,8 @@
 
     }
 
-    function searchBestOfSize(size){
+    // 受けられるタイプ数が最大になるマスクと、それに必要な最少体数を求める
+    function bestTarget(size){
 
         const data = buildSolver();
 
@@ -952,34 +960,153 @@
 
         }
 
-        let list = reconstruct(bestMask);
-
-        const minimumForBest = list.length;
-
-        list = fillToSize(list, size);
-
-        list = reduceStackedWeakness(list, bestMask);
-
-        const result = analyze(list);
-
-        const note =
-            minimumForBest < size
-                ? "(" + minimumForBest + "体で上限に達するため、残りは受けを厚くしています)"
-                : "";
-
-        setParty(
-            list,
-            list.length + "体で " + result.covered + " / " + TYPES.length +
-            "タイプを半減以下 ・ 弱点が重なるタイプ " + result.stacked + note
-        );
+        return {
+            mask: bestMask,
+            count: bestCount,
+            coreSize: data.distance[bestMask]
+        };
 
     }
 
-    function searchMinimum(){
+    // 受けられるタイプ数がちょうど targetCount になる size 体の組み合わせを全て列挙する。
+    // 候補123通り・3体までなら30万通り程度なので総当たりで足りる。
+    // (覆うタイプの組み合わせ自体が複数ありうるので、マスクではなく数で判定する)
+    const MAX_ENUMERATE_SIZE = 3;
 
-        const data = buildSolver();
+    function enumerateCores(targetCount, size){
 
-        if(data.distance[FULL_MASK] === 255){
+        const candidates = pool();
+        const found = [];
+
+        if(size <= 0 || size > MAX_ENUMERATE_SIZE) return found;
+
+        if(size === 1){
+
+            candidates.forEach(a=>{
+
+                if(popcount(a.resist) === targetCount) found.push([a]);
+
+            });
+
+            return found;
+
+        }
+
+        for(let i=0; i<candidates.length; i++){
+
+            const a = candidates[i];
+
+            for(let j=i+1; j<candidates.length; j++){
+
+                const ab = a.resist | candidates[j].resist;
+
+                if(size === 2){
+
+                    if(popcount(ab) === targetCount){
+
+                        found.push([a, candidates[j]]);
+
+                    }
+
+                    continue;
+
+                }
+
+                for(let k=j+1; k<candidates.length; k++){
+
+                    if(popcount(ab | candidates[k].resist) === targetCount){
+
+                        found.push([a, candidates[j], candidates[k]]);
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        return found;
+
+    }
+
+    // 弱点の重なりが少ない順に並べ、同点なら弱点の総数が少ない順にする
+    function sortCores(list){
+
+        return list
+            .map(core=>({core: core, score: weaknessScore(core)}))
+            .sort((a,b)=>a.score - b.score || 0)
+            .map(item=>item.core);
+
+    }
+
+    // 列挙した解のうち coreIndex 番目を反映する。
+    // 体数指定の場合は、足りない枠を受けの厚みで埋める。
+    function applyCore(){
+
+        const core = coreSolutions[coreIndex];
+        const coreSize = core.length;
+
+        const list =
+            lastSearch.kind === "minimum"
+                ? core.slice()
+                : fillToSize(core.slice(), lastSearch.size);
+
+        const result = analyze(list);
+
+        const parts = [];
+
+        if(lastSearch.kind === "minimum"){
+
+            parts.push(
+                "18タイプ全てを半減以下で受けられる最少構成は " + list.length + "体"
+            );
+
+        }else{
+
+            parts.push(
+                list.length + "体で " + result.covered + " / " + TYPES.length +
+                "タイプを半減以下"
+            );
+
+        }
+
+        parts.push("弱点が重なるタイプ " + result.stacked);
+
+        if(list.length > coreSize){
+
+            parts.push(
+                coreSize + "体で上限に達するため残りは受けを厚くしています"
+            );
+
+        }
+
+        if(coreSolutions.length > 1){
+
+            parts.push(
+                coreSolutions.length + "通り中 " + (coreIndex + 1) + "番目"
+            );
+
+        }
+
+        setParty(list, parts.join(" ・ "));
+
+    }
+
+    function startSearch(search){
+
+        const size = search.kind === "size" ? search.size : MAX_PARTY;
+        const target = bestTarget(size);
+
+        if(target.coreSize === 255){
+
+            setStatus("条件を満たす構成は見つかりませんでした。");
+
+            return;
+
+        }
+
+        if(search.kind === "minimum" && target.mask !== FULL_MASK){
 
             setStatus("18タイプ全てを受けられる構成は見つかりませんでした。");
 
@@ -987,17 +1114,43 @@
 
         }
 
-        let list = reconstruct(FULL_MASK);
+        lastSearch = {
+            kind: search.kind,
+            size: size,
+            mask: target.mask,
+            count: target.count,
+            coreSize: target.coreSize
+        };
 
-        list = reduceStackedWeakness(list, FULL_MASK);
-
-        const result = analyze(list);
-
-        setParty(
-            list,
-            "18タイプ全てを半減以下で受けられる最少構成は " + list.length +
-            "体 ・ 弱点が重なるタイプ " + result.stacked
+        coreSolutions = sortCores(
+            enumerateCores(target.count, target.coreSize)
         );
+
+        coreIndex = 0;
+
+        if(coreSolutions.length === 0){
+
+            // 列挙できない体数(4体以上が必要な場合)は動的計画法の解を1つだけ使う
+            coreSolutions = [reduceStackedWeakness(
+                reconstruct(target.mask), target.mask
+            )];
+
+        }
+
+        applyCore();
+
+        alternativeButton.disabled = coreSolutions.length <= 1;
+
+    }
+
+    // 同じ条件のまま、次の同点解を見せる
+    function searchAlternative(){
+
+        if(!lastSearch || coreSolutions.length <= 1) return;
+
+        coreIndex = (coreIndex + 1) % coreSolutions.length;
+
+        applyCore();
 
     }
 
@@ -1067,28 +1220,40 @@
 
     };
 
+    const alternativeButton =
+        document.getElementById("defense-alternative");
+
+    function runWithStatus(action){
+
+        setStatus("計算中...");
+
+        // 「計算中」を先に描画させてから計算に入る
+        setTimeout(action, 0);
+
+    }
+
     document.querySelectorAll("[data-defense-size]").forEach(button=>{
 
-        button.onclick = ()=>{
+        button.onclick = ()=>runWithStatus(()=>{
 
-            setStatus("計算中...");
+            startSearch({
+                kind: "size",
+                size: Number(button.dataset.defenseSize)
+            });
 
-            // 計算前に「計算中」を描画させる
-            setTimeout(()=>{
-
-                searchBestOfSize(Number(button.dataset.defenseSize));
-
-            }, 0);
-
-        };
+        });
 
     });
 
     document.getElementById("defense-minimum").onclick = ()=>{
 
-        setStatus("計算中...");
+        runWithStatus(()=>startSearch({kind:"minimum"}));
 
-        setTimeout(searchMinimum, 0);
+    };
+
+    alternativeButton.onclick = ()=>{
+
+        runWithStatus(searchAlternative);
 
     };
 
