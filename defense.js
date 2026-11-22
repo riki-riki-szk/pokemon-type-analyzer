@@ -544,33 +544,26 @@
 
             }
 
-            cell.className =
-                "defense-cell-item defense-" + state +
-                " " + (TYPE_CLASS[type] || "");
+            cell.className = "defense-cell-item defense-" + state;
 
             const name = document.createElement("span");
+            name.className =
+                "defense-type-chip " + (TYPE_CLASS[type] || "");
             name.textContent = type;
             cell.appendChild(name);
 
-            const counts = document.createElement("span");
-            counts.className = "defense-counts";
+            const badges = document.createElement("span");
+            badges.className = "defense-badges";
 
-            if(empty){
+            badges.appendChild(
+                createBadge("弱", weak, "weak", empty)
+            );
 
-                counts.textContent = "—";
+            badges.appendChild(
+                createBadge("半", resist, "resist", empty, immune)
+            );
 
-            }else{
-
-                const label = [];
-
-                label.push("弱" + weak);
-                label.push(immune > 0 ? "半" + resist + "(無" + immune + ")" : "半" + resist);
-
-                counts.textContent = label.join(" / ");
-
-            }
-
-            cell.appendChild(counts);
+            cell.appendChild(badges);
 
             cell.title = empty
                 ? type + "技に対する受け(パーティ未選択)"
@@ -586,6 +579,38 @@
         });
 
         resistArea.appendChild(grid);
+
+    }
+
+    // 「弱2」「半1」のような数のバッジ。0のときは灰色にして目立たせない。
+    function createBadge(label, value, kind, empty, immune){
+
+        const badge = document.createElement("span");
+
+        badge.className =
+            "defense-badge defense-badge-" + kind +
+            (empty || value === 0 ? " defense-badge-zero" : "");
+
+        const text = document.createElement("span");
+        text.className = "defense-badge-label";
+        text.textContent = label;
+        badge.appendChild(text);
+
+        const count = document.createElement("span");
+        count.className = "defense-badge-count";
+        count.textContent = empty ? "—" : value;
+        badge.appendChild(count);
+
+        if(!empty && immune > 0){
+
+            const mark = document.createElement("span");
+            mark.className = "defense-badge-immune";
+            mark.textContent = "無" + immune;
+            badge.appendChild(mark);
+
+        }
+
+        return badge;
 
     }
 

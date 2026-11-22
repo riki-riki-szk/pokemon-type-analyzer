@@ -646,17 +646,20 @@ function createDetailTitle(defendTypes){
 // 詳細表示改善
 // ======================================
 
-function createTypeGrid(title, list){
+function createTypeGrid(title, list, key){
 
     let html = "";
 
     html += "<div class='detail-group-title'>";
+    html += "<span class='detail-group-label detail-label-" + key + "'>";
     html += title;
+    html += "</span>";
+    html += "<span class='detail-group-count'>" + list.length + "タイプ</span>";
     html += "</div>";
 
     if(list.length === 0){
 
-        return html + "なし";
+        return html + "<p class='detail-group-none'>なし</p>";
 
     }
 
@@ -757,13 +760,13 @@ function showDetail(defendTypes, maxMultiplier){
 
     html += "<p class='detail-hint'>タイプをクリックすると攻撃タイプの選択に追加/解除できます</p>";
 
-    html += createTypeGrid("弱点", weak);
+    html += createTypeGrid("弱点", weak, "weak");
 
-    html += createTypeGrid("等倍", normal);
+    html += createTypeGrid("等倍", normal, "normal");
 
-    html += createTypeGrid("半減", resist);
+    html += createTypeGrid("半減", resist, "resist");
 
-    html += createTypeGrid("無効", immune);
+    html += createTypeGrid("無効", immune, "immune");
 
     html += "<hr>";
 
