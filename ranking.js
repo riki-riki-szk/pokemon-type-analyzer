@@ -213,6 +213,15 @@
 
         button.onclick = ()=>{
 
+            // 防御モードではランキングのクリックはパーティ編成に使う
+            if(window.defenseMode && window.defenseMode.isActive()){
+
+                window.defenseMode.toggleTypes(form.types);
+
+                return;
+
+            }
+
             const on = !isChecked(entry, form);
 
             setChecked(entry, form, on);

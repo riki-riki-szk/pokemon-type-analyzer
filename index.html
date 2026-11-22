@@ -48,12 +48,69 @@
     </p>
 </section>
 
-<section class="card">
+<section class="card mode-switch-card">
+    <div class="mode-switch">
+        <button type="button" class="mode-button active" data-mode="attack"
+            title="技のタイプを選んで、弱点を突ける範囲を調べる">攻撃範囲を調べる</button>
+        <button type="button" class="mode-button" data-mode="defense"
+            title="手持ちのタイプを選んで、受けられる範囲と弱点の偏りを調べる">防御相性を調べる</button>
+    </div>
+    <p class="mode-note" id="mode-note">
+        技のタイプを選ぶと、171通りの相手に対して弱点を突ける範囲(カバー率)を計算します。
+    </p>
+</section>
+
+<section class="card" id="attack-type-section">
     <h2>攻撃タイプ</h2>
     <div id="type-list"></div>
 </section>
 
-<section class="card">
+<section class="card" id="defense-section">
+
+    <div class="selected-panel">
+
+        <div class="selected-main">
+
+            <div class="selected-header">
+                <h2>パーティ(最大6体)</h2>
+                <span id="defense-count" class="info-badge">0体</span>
+                <span id="defense-coverage" class="info-badge">受けられるタイプ 0 / 18</span>
+                <button type="button" id="defense-clear" class="clear-button">全解除</button>
+            </div>
+
+            <div id="defense-party" class="defense-party">
+                マトリクス表のセル、または使用率ランキングのポケモンをクリックして追加してください。
+            </div>
+
+            <p id="defense-summary" class="defense-summary"></p>
+
+            <div id="defense-resist" class="defense-resist"></div>
+
+            <p class="external-note" id="defense-heat-note">
+                ※防御モードでは、マトリクス表の数字は「そのタイプをパーティに加えると、
+                新たに受けられるようになるタイプの数」です。濃いセルほど穴を埋められます。
+            </p>
+
+        </div>
+
+        <div class="auto-select-panel">
+            <div class="auto-select-title">自動編成</div>
+            <div class="auto-select-list">
+                <button class="auto-select-button" data-defense-size="2" title="2体で受けられるタイプ数が最大になる組み合わせ">2体</button>
+                <button class="auto-select-button" data-defense-size="3" title="3体で受けられるタイプ数が最大になる組み合わせ">3体</button>
+                <button class="auto-select-button" data-defense-size="4" title="4体で受けられるタイプ数が最大になる組み合わせ">4体</button>
+                <button class="auto-select-button" data-defense-size="5" title="5体で受けられるタイプ数が最大になる組み合わせ">5体</button>
+                <button class="auto-select-button" data-defense-size="6" title="6体で受けられるタイプ数が最大になる組み合わせ">6体</button>
+                <button class="auto-select-button" id="defense-minimum" title="18タイプ全てを半減以下で受けられる最少体数">18タイプ最少</button>
+            </div>
+            <p id="defense-status" class="auto-select-status"></p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="card" id="attack-select-section">
     <div class="selected-panel">
 
         <div class="selected-main">
@@ -147,6 +204,8 @@
         <li>カバー率99%を超える最少タイプ構成を探索</li>
         <li>次に追加すると効果的なタイプ候補を提案</li>
         <li>マトリクス表のセルをクリックすると、該当する実在ポケモン(最終進化形)を表示</li>
+        <li><b>防御相性モード</b>:手持ち(最大6体)のタイプを選ぶと、18種の攻撃タイプのうち何種を半減以下で受けられるか、弱点がどこに重なっているかを一覧表示</li>
+        <li>18タイプ全てを半減以下で受けられる最少構成や、指定体数で受けられるタイプ数が最大になる組み合わせを自動計算</li>
         <li>ポケモンチャンピオンズのランクバトル使用率ランキング(シングル/ダブル上位30、毎日更新)を表示し、クリックしたポケモンのタイプをマトリクス上に反映。選んだ攻撃タイプで環境上位の何体に弱点を突けるかが一目でわかります</li>
     </ul>
 
@@ -156,6 +215,7 @@
         <li>「選択中」欄に選んだタイプ数とカバー率が表示されます。</li>
         <li>下のマトリクス表のセルをクリックすると、右側の「詳細」に弱点・等倍・半減・無効の一覧と、該当する実在ポケモンが表示されます。</li>
         <li>右側の「使用率ランキング」でポケモンをクリックすると、そのタイプのセルに順位バッジが付き、選んだ攻撃タイプで弱点を突ける数が表示されます。</li>
+        <li>上部の「防御相性を調べる」に切り替えると、マトリクス表やランキングのクリックが<b>自分のパーティへの追加</b>に変わります。18タイプそれぞれを何体が半減以下で受けられるか、弱点が何体に重なっているかが表示され、マトリクス表は「加えると穴を埋められるタイプ」のヒートマップになります。</li>
     </ol>
 
     <h2>免責事項</h2>
@@ -274,6 +334,7 @@
 <script src="engine.js"></script>
 <script src="script.js"></script>
 <script src="ranking.js"></script>
+<script src="defense.js"></script>
 
 </body>
 </html>
