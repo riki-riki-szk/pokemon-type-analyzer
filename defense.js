@@ -367,9 +367,14 @@
 
         if(party.length === 0){
 
-            summaryArea.textContent = "";
+            summaryArea.textContent =
+                "ポケモンを選ぶと、弱点の重なりと受けられないタイプを集計します。";
+
+            summaryArea.classList.add("defense-summary-empty");
 
         }else{
+
+            summaryArea.classList.remove("defense-summary-empty");
 
             const parts = [];
 
@@ -432,7 +437,7 @@
         if(party.length === 0){
 
             partyArea.textContent =
-                "マトリクス表のセル、または使用率ランキングのポケモンをクリックして追加してください。";
+                "マトリクス表やランキングのポケモンをクリックで追加";
 
             return;
 
@@ -503,7 +508,9 @@
 
         resistArea.innerHTML = "";
 
-        if(party.length === 0) return;
+        // パーティが空でも枠ごと描く。
+        // 空のときだけ消すと、その分だけマトリクス表が上下に動いてしまうため。
+        const empty = party.length === 0;
 
         const title = document.createElement("div");
         title.className = "detail-group-title";
@@ -523,7 +530,11 @@
 
             let state = "plain";
 
-            if(weak >= 2 || (weak > 0 && resist === 0)){
+            if(empty){
+
+                state = "plain";
+
+            }else if(weak >= 2 || (weak > 0 && resist === 0)){
 
                 state = "danger";
 
@@ -544,19 +555,31 @@
             const counts = document.createElement("span");
             counts.className = "defense-counts";
 
-            const label = [];
+            if(empty){
 
-            label.push("弱" + weak);
-            label.push(immune > 0 ? "半" + resist + "(無" + immune + ")" : "半" + resist);
+                counts.textContent = "—";
 
-            counts.textContent = label.join(" / ");
+            }else{
+
+                const label = [];
+
+                label.push("弱" + weak);
+                label.push(immune > 0 ? "半" + resist + "(無" + immune + ")" : "半" + resist);
+
+                counts.textContent = label.join(" / ");
+
+            }
+
             cell.appendChild(counts);
 
-            cell.title =
-                type + "技: 弱点 " + weak + "体 / 半減以下 " + resist + "体" +
+            cell.title = empty
+                ? type + "技に対する受け(パーティ未選択)"
+                : type + "技: 弱点 " + weak + "体 / 半減以下 " + resist + "体" +
                 (immune > 0 ? "(うち無効 " + immune + "体)" : "") +
                 (weak >= 2 ? " — 弱点が重なっています" : "") +
                 (resist === 0 && weak > 0 ? " — 受けられる味方がいません" : "");
+
+            if(empty) cell.classList.add("defense-cell-empty");
 
             grid.appendChild(cell);
 
