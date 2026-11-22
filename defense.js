@@ -26,6 +26,7 @@
     const resistArea = document.getElementById("defense-resist");
     const summaryArea = document.getElementById("defense-summary");
     const statusArea = document.getElementById("defense-status");
+    const heatNote = document.getElementById("defense-heat-note");
     const countBadge = document.getElementById("defense-count");
     const coverageBadge = document.getElementById("defense-coverage");
 
@@ -38,6 +39,11 @@
 
     let mode = "attack";
     let party = [];
+
+    // ゲーム内に実在するタイプ構成(data/champions_ranking.json の typings)
+    // 自動編成が存在しない組み合わせを提案しないように使う
+    let existingTypings = null;
+    let searchPool = null;
 
     // ----------------------------
     // 171通りの防御タイプ情報
@@ -122,6 +128,69 @@
         comboByKey.set(combo.key, combo);
 
     });
+
+    function examplesOf(combo){
+
+        if(!existingTypings) return null;
+
+        return existingTypings.get(combo.key) || null;
+
+    }
+
+    function isReal(combo){
+
+        return !existingTypings || existingTypings.has(combo.key);
+
+    }
+
+    function pool(){
+
+        return searchPool || ALL_COMBOS;
+
+    }
+
+    async function loadTypings(){
+
+        try{
+
+            const res = await fetch("data/champions_ranking.json", {cache:"no-cache"});
+
+            if(!res.ok) throw new Error("HTTP "+res.status);
+
+            const data = await res.json();
+
+            if(!Array.isArray(data.typings) || data.typings.length === 0) return;
+
+            existingTypings = new Map();
+
+            data.typings.forEach(item=>{
+
+                const key = normalizeTypes(item.types).join("・");
+
+                existingTypings.set(key, {
+                    names: item.names || [],
+                    count: item.count || 0
+                });
+
+            });
+
+            searchPool =
+                ALL_COMBOS.filter(combo=>existingTypings.has(combo.key));
+
+            // 候補が変わるので探索結果のキャッシュを捨てる
+            solver = null;
+
+            if(mode === "defense") renderDefense();
+
+        }catch(e){
+
+            // 取得できなければ171通り全てを候補として扱う(従来どおり)
+            existingTypings = null;
+            searchPool = null;
+
+        }
+
+    }
 
     // マトリクスのセルと同じ順序(TYPES順)に直す
     function normalizeTypes(types){
@@ -305,6 +374,45 @@
 
         paintMatrix();
 
+        renderHeatNote();
+
+    }
+
+    function renderHeatNote(){
+
+        if(!heatNote) return;
+
+        const covered = uncoveredMask() === 0 && party.length > 0;
+
+        const lines = [];
+
+        if(covered){
+
+            lines.push(
+                "※18タイプ全てを半減以下で受けられる状態になったため、マトリクス表の数字は" +
+                "「そのタイプ自身が半減以下にできるタイプの数」に切り替わっています。"
+            );
+
+        }else{
+
+            lines.push(
+                "※マトリクス表の数字は「そのタイプをパーティに加えると、" +
+                "新たに受けられるようになるタイプの数」です。濃いセルほど穴を埋められます。"
+            );
+
+        }
+
+        if(existingTypings){
+
+            lines.push(
+                "薄く表示されているセルは、該当するポケモンがゲーム内に存在しない組み合わせです" +
+                "(自動編成では選ばれません)。"
+            );
+
+        }
+
+        heatNote.textContent = lines.join(" ");
+
     }
 
     function renderParty(){
@@ -342,6 +450,31 @@
                 chip.appendChild(typeChip);
 
             });
+
+            const examples = examplesOf(member);
+
+            const note = document.createElement("span");
+            note.className = "defense-member-example";
+
+            if(examples){
+
+                note.textContent = examples.names.slice(0, 2).join("、");
+
+                chip.title =
+                    examples.names.join("、") +
+                    (examples.count > examples.names.length
+                        ? " ほか" + (examples.count - examples.names.length) + "種類"
+                        : "") + " / クリックで外す";
+
+            }else if(existingTypings){
+
+                note.textContent = "該当なし";
+                note.classList.add("defense-member-none");
+                chip.title = "この組み合わせのポケモンはいません / クリックで外す";
+
+            }
+
+            chip.appendChild(note);
 
             const remove = document.createElement("span");
             remove.className = "defense-member-remove";
@@ -436,7 +569,7 @@
 
         matrixTable.querySelectorAll("td.defense-painted").forEach(td=>{
 
-            td.classList.remove("defense-painted","defense-in-party");
+            td.classList.remove("defense-painted","defense-in-party","defense-unreal");
 
             for(let level=0; level<=4; level++){
 
@@ -563,12 +696,32 @@
 
             }
 
-            td.title =
+            const examples = examplesOf(combo);
+
+            td.classList.toggle("defense-unreal", !isReal(combo));
+
+            let title =
                 combo.key +
                 (showTotal
                     ? " — 半減以下にできるタイプ " + gain + "種"
-                    : " — 加えると新たに受けられるタイプ " + gain + "種") +
-                (index >= 0 ? "(パーティに編成中)" : "");
+                    : " — 加えると新たに受けられるタイプ " + gain + "種");
+
+            if(examples){
+
+                title += "\n" + examples.names.join("、") +
+                    (examples.count > examples.names.length
+                        ? " ほか" + (examples.count - examples.names.length) + "種類"
+                        : "");
+
+            }else if(existingTypings){
+
+                title += "\nこの組み合わせのポケモンはいません";
+
+            }
+
+            if(index >= 0) title += "\n(パーティに編成中)";
+
+            td.title = title;
 
         });
 
@@ -588,6 +741,8 @@
 
         if(solver) return solver;
 
+        const candidates = pool();
+
         const distance = new Uint8Array(FULL_MASK + 1).fill(255);
         const choice = new Int32Array(FULL_MASK + 1).fill(-1);
         const previous = new Int32Array(FULL_MASK + 1).fill(-1);
@@ -605,9 +760,9 @@
 
             const next = distance[mask] + 1;
 
-            for(let k=0; k<ALL_COMBOS.length; k++){
+            for(let k=0; k<candidates.length; k++){
 
-                const resist = ALL_COMBOS[k].resist;
+                const resist = candidates[k].resist;
 
                 if(!(resist & (1 << bit))) continue;
 
@@ -628,7 +783,8 @@
         solver = {
             distance: distance,
             choice: choice,
-            previous: previous
+            previous: previous,
+            candidates: candidates
         };
 
         return solver;
@@ -644,7 +800,7 @@
 
         while(current > 0 && data.choice[current] >= 0){
 
-            list.push(ALL_COMBOS[data.choice[current]]);
+            list.push(data.candidates[data.choice[current]]);
 
             current = data.previous[current];
 
@@ -666,9 +822,11 @@
 
             for(let i=0; i<best.length; i++){
 
-                for(let k=0; k<ALL_COMBOS.length; k++){
+                const candidates = pool();
 
-                    const candidate = ALL_COMBOS[k];
+                for(let k=0; k<candidates.length; k++){
+
+                    const candidate = candidates[k];
 
                     if(best.some((member, index)=>
                         index !== i && member.key === candidate.key)) continue;
@@ -710,9 +868,11 @@
             let bestCandidate = null;
             let bestScore = Infinity;
 
-            for(let k=0; k<ALL_COMBOS.length; k++){
+            const candidates = pool();
 
-                const candidate = ALL_COMBOS[k];
+            for(let k=0; k<candidates.length; k++){
+
+                const candidate = candidates[k];
 
                 if(list.some(member=>member.key === candidate.key)) continue;
 
@@ -952,5 +1112,7 @@
     };
 
     renderDefense();
+
+    loadTypings();
 
 })();

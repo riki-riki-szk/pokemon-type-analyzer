@@ -36,6 +36,9 @@ TYPE_JA = {
     "Steel": "はがね", "Fairy": "フェアリー",
 }
 
+# マトリクス表と同じ並び順(data/typeChart.js の TYPES と一致させること)
+TYPES_JA_ORDER = list(TYPE_JA.values())
+
 # フォーム名(英語のハイフン以降)→ 日本語表記。(prefix, suffix)
 FORM_JA = {
     "Alola": ("アローラ", ""),
@@ -87,6 +90,8 @@ SPECIES_OVERRIDE = {
     "Flabébé": "flabebe",
     "Farfetch'd": "farfetchd",
     "Sirfetch'd": "sirfetchd",
+    "Farfetch’d": "farfetchd",
+    "Sirfetch’d": "sirfetchd",
 }
 
 # 英名のハイフンがフォーム区切りではなく種名の一部であるもの
@@ -118,7 +123,7 @@ def species_slug(base_name):
     if base_name in SPECIES_OVERRIDE:
         return SPECIES_OVERRIDE[base_name]
     slug = base_name.lower()
-    slug = re.sub(r"[.:']", "", slug)
+    slug = re.sub(r"[.:'’ʼ]", "", slug)
     slug = re.sub(r"\s+", "-", slug.strip())
     return slug
 
@@ -250,6 +255,58 @@ def build_entry(pokemon, format_name, position, name_cache):
     return entry
 
 
+# 1つのタイプ構成につき載せる代表ポケモン数
+EXAMPLES_PER_TYPING = 4
+
+
+def collect_typings(index, name_cache):
+    """ゲーム内に実在するタイプの組み合わせを集める。
+
+    防御モードの自動編成が「存在しないタイプの組み合わせ」を提案しないように、
+    実在する構成とその代表ポケモン名だけを書き出す。
+    """
+    found = {}
+
+    for pokemon in index["pokemon"]:
+        summary = pokemon.get("summary", {})
+        primary = summary.get("primary") or {}
+        base_types = primary.get("types") or []
+
+        if not base_types:
+            continue
+
+        display = japanese_display_name(pokemon["name"], name_cache)
+
+        variants = [(base_types, display)]
+
+        # メガシンカでタイプが変わるものも実在する構成として扱う
+        for form in summary.get("forms", []):
+            kind = form.get("form_kind", "")
+            if not kind.startswith("Mega"):
+                continue
+            if form.get("types") == base_types:
+                continue
+            variants.append((form["types"], mega_label(kind) + display))
+
+        for types, name in variants:
+            key = tuple(sorted((TYPE_JA[t] for t in types), key=TYPES_JA_ORDER.index))
+            entry = found.setdefault(key, [])
+            if name not in entry:
+                entry.append(name)
+
+    typings = []
+
+    for key in sorted(found, key=lambda k: (len(k), [TYPES_JA_ORDER.index(t) for t in k])):
+        names = found[key]
+        typings.append({
+            "types": list(key),
+            "names": names[:EXAMPLES_PER_TYPING],
+            "count": len(names),
+        })
+
+    return typings
+
+
 def main():
     print("fetching index ...")
     index = fetch_json(INDEX_URL)
@@ -283,6 +340,10 @@ def main():
         for position, p in ranked:
             entries.append(build_entry(p, format_name, position, name_cache))
         result["formats"][key] = entries
+
+    print("collecting typings ...")
+    result["typings"] = collect_typings(index, name_cache)
+    print(f"typings: {len(result['typings'])}")
 
     save_name_cache(name_cache)
     OUTPUT_PATH.write_text(json.dumps(result, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
