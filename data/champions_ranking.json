@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "21/11/2026",
+ "dataDate": "22/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -638,24 +638,6 @@
    },
    {
     "rank": 34,
-    "id": "aegislash",
-    "en": "Aegislash",
-    "name": "ギルガルド",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "はがね",
-       "ゴースト"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 35,
     "id": "ninetalesalola",
     "en": "Ninetales-Alola",
     "name": "アローラキュウコン",
@@ -666,6 +648,24 @@
       "types": [
        "こおり",
        "フェアリー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 35,
+    "id": "aegislash",
+    "en": "Aegislash",
+    "name": "ギルガルド",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "はがね",
+       "ゴースト"
       ],
       "rate": null,
       "default": true
@@ -710,23 +710,6 @@
    },
    {
     "rank": 38,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 39,
     "id": "clefable",
     "en": "Clefable",
     "name": "ピクシー",
@@ -748,6 +731,23 @@
        "ひこう"
       ],
       "rate": 77.8,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 39,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
+      ],
+      "rate": null,
       "default": true
      }
     ]
@@ -1072,7 +1072,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.5,
+      "rate": 95.4,
       "default": true
      },
      {
@@ -1082,7 +1082,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.5,
+      "rate": 4.6,
       "default": false
      }
     ]
@@ -1207,7 +1207,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 6.5,
+      "rate": 6.4,
       "default": false
      },
      {
@@ -1217,7 +1217,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 93.5,
+      "rate": 93.6,
       "default": true
      }
     ]
