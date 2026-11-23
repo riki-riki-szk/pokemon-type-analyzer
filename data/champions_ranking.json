@@ -602,24 +602,6 @@
    },
    {
     "rank": 32,
-    "id": "tyranitar",
-    "en": "Tyranitar",
-    "name": "バンギラス",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "いわ",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 33,
     "id": "sneasler",
     "en": "Sneasler",
     "name": "オオニューラ",
@@ -630,6 +612,24 @@
       "types": [
        "かくとう",
        "どく"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 33,
+    "id": "tyranitar",
+    "en": "Tyranitar",
+    "name": "バンギラス",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "いわ",
+       "あく"
       ],
       "rate": null,
       "default": true
@@ -1009,7 +1009,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 73.3,
+      "rate": 73.2,
       "default": true
      },
      {
@@ -1018,7 +1018,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 26.7,
+      "rate": 26.8,
       "default": false
      }
     ]
@@ -1715,16 +1715,16 @@
    },
    {
     "rank": 41,
-    "id": "camerupt",
-    "en": "Camerupt",
-    "name": "バクーダ",
+    "id": "arcaninehisui",
+    "en": "Arcanine-Hisui",
+    "name": "ヒスイウインディ",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
        "ほのお",
-       "じめん"
+       "いわ"
       ],
       "rate": null,
       "default": true
@@ -1751,16 +1751,16 @@
    },
    {
     "rank": 43,
-    "id": "arcaninehisui",
-    "en": "Arcanine-Hisui",
-    "name": "ヒスイウインディ",
+    "id": "camerupt",
+    "en": "Camerupt",
+    "name": "バクーダ",
     "forms": [
      {
       "key": "base",
       "label": null,
       "types": [
        "ほのお",
-       "いわ"
+       "じめん"
       ],
       "rate": null,
       "default": true
