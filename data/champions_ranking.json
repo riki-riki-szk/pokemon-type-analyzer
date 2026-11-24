@@ -308,23 +308,6 @@
    },
    {
     "rank": 16,
-    "id": "rillaboom",
-    "en": "Rillaboom",
-    "name": "ゴリランダー",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "くさ"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 17,
     "id": "metagross",
     "en": "Metagross",
     "name": "メタグロス",
@@ -335,6 +318,23 @@
       "types": [
        "はがね",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 17,
+    "id": "rillaboom",
+    "en": "Rillaboom",
+    "name": "ゴリランダー",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "くさ"
       ],
       "rate": null,
       "default": true
@@ -738,7 +738,7 @@
       "types": [
        "フェアリー"
       ],
-      "rate": 22.1,
+      "rate": 22.2,
       "default": false
      },
      {
@@ -748,7 +748,7 @@
        "フェアリー",
        "ひこう"
       ],
-      "rate": 77.9,
+      "rate": 77.8,
       "default": true
      }
     ]
@@ -818,24 +818,6 @@
    },
    {
     "rank": 43,
-    "id": "samurotthisui",
-    "en": "Samurott-Hisui",
-    "name": "ヒスイダイケンキ",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "みず",
-       "あく"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 44,
     "id": "starmie",
     "en": "Starmie",
     "name": "スターミー",
@@ -846,6 +828,24 @@
       "types": [
        "みず",
        "エスパー"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 44,
+    "id": "samurotthisui",
+    "en": "Samurott-Hisui",
+    "name": "ヒスイダイケンキ",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "みず",
+       "あく"
       ],
       "rate": null,
       "default": true
