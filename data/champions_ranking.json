@@ -21,7 +21,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 67.5,
+      "rate": 67.6,
       "default": true
      },
      {
@@ -30,7 +30,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 32.5,
+      "rate": 32.4,
       "default": false
      }
     ]
@@ -354,7 +354,7 @@
        "みず",
        "ひこう"
       ],
-      "rate": 48.7,
+      "rate": 48.8,
       "default": false
      },
      {
@@ -364,7 +364,7 @@
        "みず",
        "あく"
       ],
-      "rate": 51.3,
+      "rate": 51.2,
       "default": true
      }
     ]
@@ -1009,7 +1009,7 @@
        "ドラゴン",
        "じめん"
       ],
-      "rate": 73.2,
+      "rate": 73.1,
       "default": true
      },
      {
@@ -1018,7 +1018,7 @@
       "types": [
        "ドラゴン"
       ],
-      "rate": 26.8,
+      "rate": 26.9,
       "default": false
      }
     ]
@@ -1072,7 +1072,7 @@
        "ほのお",
        "ひこう"
       ],
-      "rate": 95.3,
+      "rate": 95.2,
       "default": true
      },
      {
@@ -1082,7 +1082,7 @@
        "ほのお",
        "ドラゴン"
       ],
-      "rate": 4.7,
+      "rate": 4.8,
       "default": false
      }
     ]
@@ -1207,7 +1207,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 6.5,
+      "rate": 6.4,
       "default": false
      },
      {
@@ -1217,7 +1217,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 93.5,
+      "rate": 93.6,
       "default": true
      }
     ]
@@ -1394,23 +1394,6 @@
    },
    {
     "rank": 23,
-    "id": "floetteeternal",
-    "en": "Floette-Eternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "forms": [
-     {
-      "key": "base",
-      "label": null,
-      "types": [
-       "フェアリー"
-      ],
-      "rate": null,
-      "default": true
-     }
-    ]
-   },
-   {
-    "rank": 24,
     "id": "excadrill",
     "en": "Excadrill",
     "name": "ドリュウズ",
@@ -1421,6 +1404,23 @@
       "types": [
        "じめん",
        "はがね"
+      ],
+      "rate": null,
+      "default": true
+     }
+    ]
+   },
+   {
+    "rank": 24,
+    "id": "floetteeternal",
+    "en": "Floette-Eternal",
+    "name": "フラエッテ(えいえんのはな)",
+    "forms": [
+     {
+      "key": "base",
+      "label": null,
+      "types": [
+       "フェアリー"
       ],
       "rate": null,
       "default": true
