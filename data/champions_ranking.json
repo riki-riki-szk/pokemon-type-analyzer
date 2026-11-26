@@ -1,6 +1,6 @@
 {
  "season": "M7",
- "dataDate": "25/11/2026",
+ "dataDate": "26/11/2026",
  "source": {
   "ranking": "https://championsbattledata.com/",
   "names": "https://pokeapi.co/"
@@ -783,7 +783,7 @@
        "ノーマル",
        "ひこう"
       ],
-      "rate": 10.5,
+      "rate": 10.6,
       "default": false
      },
      {
@@ -793,7 +793,7 @@
        "かくとう",
        "ひこう"
       ],
-      "rate": 89.5,
+      "rate": 89.4,
       "default": true
      }
     ]
